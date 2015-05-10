@@ -1,8 +1,878 @@
-<!DOCTYPE html>
-<head>
-  <title>A Little Look into History</title>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<link href='http://thehistoryblog.com/favicon.ico' rel='icon' type='image/x-icon'/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>The History Blog  </title>
+
+	<meta name="generator" content="WordPress 3.2.1" /> <!-- leave this for stats -->
+
+	<link rel="stylesheet" href="http://www.thehistoryblog.com/wp-content/themes/retro-book-10/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="The History Blog RSS Feed" href="http://www.thehistoryblog.com/feed" />
+	<link rel="pingback" href="http://www.thehistoryblog.com/xmlrpc.php" />
+	<link rel='stylesheet' id='cntctfrm_form_style-css'  href='http://www.thehistoryblog.com/wp-content/plugins/contact-form-plugin/css/form_style.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='A2A_SHARE_SAVE-css'  href='http://www.thehistoryblog.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.9' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.thehistoryblog.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.thehistoryblog.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.thehistoryblog.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='The History Blog' href='http://www.thehistoryblog.com' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='shortlink' href='http://wp.me/E7N2' />
+
+<script type="text/javascript"><!--
+var a2a_config=a2a_config||{},wpa2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='http://static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);wpa2a.script_load=function(){};},script_onready:function(){if(a2a.type=='page'){wpa2a.script_ready=true;if(wpa2a.html_done)wpa2a.init();}},init:function(){for(var i=0,el,target,targets=wpa2a.targets,length=targets.length;i<length;i++){el=document.getElementById('wpa2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el){a2a.init('page',{target:el});el.id='';}wpa2a.done=true;}wpa2a.targets=[];}};a2a_config.callbacks=a2a_config.callbacks||[];a2a_config.callbacks.push({ready:wpa2a.script_onready});
+a2a_config.onclick=1;
+a2a_config.show_title=1;
+a2a_color_main="E8C686";a2a_color_border="BFA26B";a2a_color_link_text="333333";a2a_color_link_text_hover="333333";
+//--></script>
+<script language="javascript" type="text/javascript">
+<!--
+		function collapseThread( theId ) {
+			var comment = document.getElementById(theId);
+			if(!comment)
+			{
+				alert("ERROR:\nThe document structure is different\nfrom what Threaded Comments expects.\nYou are missing the element '"+theId+"'");
+				return;
+			}
+			var theBody = findBody(comment);
+			if(comment.className.indexOf("collapsed") > -1) {
+				comment.className = comment.className.replace(" collapsed", "");;
+			} else {
+				comment.className += " collapsed";
+			}
+		}
+
+		function expandThread( theId ) {
+			var comment = document.getElementById(theId);
+			if(!comment)
+			{
+				alert("ERROR:\nThe document structure is different\nfrom what Threaded Comments expects.\nYou are missing the element '"+theId+"'");
+				return;
+			}
+			var theBody = findBody(comment);
+			if(comment.className.indexOf("collapsed") > -1) {
+				comment.className = comment.className.replace(" collapsed", "");;
+			} 
+		}
+		
+		function findBody(el)
+		{
+			var divs = el.getElementsByTagName("div");
+			var ret;
+			for(var i = 0; i < divs.length; ++i) {
+				if(divs.item(i).className.indexOf("body") > -1)
+					return divs.item(i);
+			}
+			return false;
+		}
+	
+		function onAddComment() {
+			//checkDocumentIntegrity();
+			var el = document.getElementById("commentform");
+			// Future release: Check if form is filled correctly and mark the form fields.
+			el.submit();
+		}
+		
+		function moveAddCommentBelow(theId, threadId, collapse)
+		{
+			expandThread( theId );
+			var addComment = document.getElementById("addcomment");
+			if(!addComment)
+			{
+			  	alert("ERROR:\nThreaded Comments can't find the 'addcomment' div.\nThis is probably because you have changed\nthe comments.php file.\nMake sure there is a tag around the form\nthat has the id 'addcomment'"); 
+				return
+			}
+			var comment = document.getElementById(theId);
+			if(collapse)
+			{
+				for(var i = 0; i < comment.childNodes.length; ++i) {
+					var c = comment.childNodes.item(i);
+					if(typeof(c.className) == "string" && c.className.indexOf("collapsed")<0) {
+						c.className += " collapsed";
+					}
+				}
+			}
+			addComment.parentNode.removeChild(addComment);
+
+			comment.appendChild(addComment);
+			if(comment.className.indexOf("alt")>-1) {
+				addComment.className = addComment.className.replace(" alt", "");					
+			} else {
+				addComment.className += " alt";
+			}
+		        var replyId = document.getElementById("comment_reply_ID");
+			if(replyId == null)
+			{
+				alert("Brians Threaded Comments Error:\nThere is no hidden form field called\n'comment_reply_ID'. This is probably because you\nchanged the comments.php file and forgot\nto include the field. Please take a look\nat the original comments.php and copy the\nform field over.");
+			}
+			replyId.value = threadId;
+			var reRootElement = document.getElementById("reroot");
+			if(reRootElement == null)
+			{
+				alert("Brians Threaded Comments Error:\nThere is no anchor tag called 'reroot' where\nthe comment form starts.\nPlease compare your comments.php to the original\ncomments.php and copy the reroot anchor tag over.");
+			}
+			reRootElement.style.display = "block";
+			var aTags = comment.getElementsByTagName("A");
+			var anc = aTags.item(0).id;
+			//document.location.href = "#"+anc;
+			document.getElementById("comment").focus();
+		}
+
+		function checkDocumentIntegrity()
+		{
+			str = "";
+			
+			str += checkElement("reroot","div tag");
+			str += checkElement("addcomment", "div tag");
+			str += checkElement("comment_reply_ID", "hidden form field");
+			str += checkElement("content", "div tag");
+			str += checkElement("comment", "textfield");
+			str += checkElement("addcommentanchor", "anchor tag");
+			
+			if(str != "")
+			{
+				str = "Brian's Threaded Comments are missing some of the elements that are required for it to function correctly.\nThis is probably the because you have changed the original comments.php that was included with the plugin.\n\nThese are the errors:\n" + str;
+				str += "\nYou should compare your comments.php with the original comments.php and make sure the required elements have not been removed.";
+
+				alert(str);
+			}
+		}
+               
+		function checkElement(theId, elDesc)
+		{
+			var el = document.getElementById(theId);
+			if(!el)
+			{
+				if(elDesc == null)
+					elDesc = "element";
+				return "- The "+elDesc+" with the ID '" +theId + "' is missing\n"; 
+			}
+			else 
+				return "";
+		}
+		
+		function reRoot()
+		{
+			var addComment = document.getElementById("addcomment");			
+			var reRootElement = document.getElementById("reroot");
+			reRootElement.style.display = "none";
+			var content = document.getElementById("content");
+			addComment.parentNode.removeChild(addComment);
+			content.appendChild(addComment);
+			addComment.className = addComment.className.replace(" alt", "");
+			document.location.href = "#addcommentanchor";
+			document.getElementById("comment").focus();				
+			document.getElementById("comment_reply_ID").value = "0";
+		}			
+		
+		function changeCommentSize(d)
+		{
+			var el = document.getElementById("comment");
+			var height = parseInt(el.style.height);
+			if(!height && el.offsetHeight)
+				height = el.offsetHeight;
+			height += d;
+			if(height < 20) 
+				height = 20;
+			el.style.height = height+"px";
+		}		
+-->
+</script>
+<style type="text/css">
+.comment 
+{
+	position: 				relative;
+	margin:					3px;
+	margin-top:				6px;
+/*	border: 				1px solid #666; */
+	padding:				4px 4px 4px 8px;
+}
+
+.odd
+{
+	background-color: #E2c080;
+}
+
+.comment div {
+	position: 				relative;
+}
+
+.comment .comment img
+{
+	margin: 				0px;
+}
+
+.comment .collapseicon 
+{
+	width: 					13px;
+	height: 				13px;
+	overflow:				hidden;
+	background-image: 		url(http://www.thehistoryblog.com/wp-content/plugins/briansthreadedcomments.php?image=subthread-open.png);
+}
+
+.collapsed .collapseicon 
+{
+	background-image: 		url(http://www.thehistoryblog.com/wp-content/plugins/briansthreadedcomments.php?image=subthread.png);
+}
+
+
+.comment .reply {
+	text-align: 			right;
+	font-size: 				80%;
+	padding: 				0px 6px 6px 0px;
+}
+
+.comment
+{
+	border: 	2px solid #ddd;
+	margin-top: 			10px;
+}
+
+input#subscribe
+{
+	width: auto;
+}
+
+.comment .body .content
+{
+	padding:				0px 3px 0px 3px;
+	width: 					100%;	
+	overflow: 				auto; 
+}
+
+.comment .title abbr
+{
+	border: none;
+}
+
+.collapsed .body, .collapsed .comment
+{
+	display:				none;
+}
+/*
+#addcomment small, #addcomment div
+{
+	padding:				3px;
+}
+*/
+#commentform textarea {
+	width: 97%;
+}
+</style>
+<script type="text/javascript" src="http://www.thehistoryblog.com/wp-content/plugins/flash-video-player/swfobject.js"></script>
+<link href='http://thehistoryblog.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://thehistoryblog.com/favicon.ico' rel='shortcut icon' type='image/x-icon'/>
 </head>
 <body>
-Hello World!
-</body
+
+<div id="ROOT">
+<div class="BGPage">
+<div class="LeftTop">
+<div class="LeftBottom">
+
+	<div id="HEAD">
+		<h1 class="Logo"><a href="http://www.thehistoryblog.com/"><span>The History Blog</span></a></h1>
+		<div class="Visual"></div>
+	</div>
+
+	<div id="MAIN">
+
+	
+		
+			<div class="post" id="post-36478">
+				<h2><a href="http://www.thehistoryblog.com/archives/36478" rel="bookmark" title="Permanent Link to Roman pool heater found in Bulgarian resort">Roman pool heater found in Bulgarian resort</a></h2>
+				<p class="prefix">May 9th, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/sostra-fortress.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/sostra-fortress-200x150.jpg" alt="" title="Remains of Sostra fortress" width="200" height="150" class="alignleft size-medium wp-image-36481" /></a>Trajan&#8217;s conquest of Dacia, so beautifully immortalized on the <a href="http://www.thehistoryblog.com/archives/35584" target="_blank">column that bears his name</a>, was as immense a construction project as it was a military one. Trajan (r. 98-117 A.D.) built several major roads during his campaigns in Dacia, feats of engineering urged by the military necessity to clear a path for the organized and speedy movement of troops and supplies. The Via Trajana <a href="https://goo.gl/maps/ifuDD" target="_blank">almost bisects central Bulgaria</a>. It started in the Danube city of Ulpia Oescus, today the town of Gigen just south of the Romanian border, then went south through Sostra (modern-day Troyan) and the Troyan Pass in the Balkan Mountains before ending in Philippopolis (modern-day Plovdiv) which in Trajan&#8217;s day was in the Roman province of Thrace and is now in southern Bulgaria. The road played an important strategic role in the conquest of Dacia since it provided the army with a vital link connecting the Roman province of Lower Moesia on the Danube Plain with the largest city in Thrace. An even longer road Trajan built, the <a href="http://upload.wikimedia.org/wikipedia/commons/0/0e/Balkans_6th_century.svg" target="_blank"><em>Via Militaris</em></a>, intersected Philippopolis going the other way, diagonally from the northwest to the southeast of what is now Bulgaria. </p>
+<p>Subsequent emperors maintained and added to the roads, building watch forts and . Along the Balkan stretch of the Via Trajana, Antonius Pius (r. 138-161 A.D.) built a fortress at Sostra in the Osam river valley to garrison the area which is known to have revolted against his rule at least once. Septimius Severus (r. 193-211 A.D.) and Gallienus (r. 253-268 A.D.) built fortresses practically on top of their predecessors&#8217; ones at Sostra. The garrison ranged from 500 to 1,000 soldiers strong at different times, all of whom were housed in long wooden barracks with tiled roofs and well-fed on a diet of domesticated animals, game and mussels from the Osam river. </p>
+<p>As so often happened in the Roman empire, a bustling town grew alongside the outpost to take advantage of the security afforded by troops permanently stationed there and the many opportunity for trade. In the 5th century, invading Huns destroyed the fortress and the town which were then left undeveloped. With no subsequent construction to destroy what was left of the Roman structures, the site has proven a rich source of archaeological remains since excavations began in the 1970s. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Indoor-swimming-pool-at-Sostra-spa.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Indoor-swimming-pool-at-Sostra-spa-200x200.jpg" alt="" title="Indoor swimming pool found at Sostra road station" width="150" height="150" class="alignright size-medium wp-image-36482" /></a>More recently, a team led by archaeologist Ivan Hristov have been excavating Sostra and environs since 2002. They found a stretch of the Via Trajana <a href="http://www.novinite.com/view_news.php?id=120339" target="_blank">in 2010</a> that&#8217;s an impressive 7 meters (23 feet) wide and in excellent condition, the best preserved Roman road ever discovered in Bulgaria. Last year Hristov&#8217;s team <a href="http://82.119.84.124/en/post/100411143/roman-luxury-near-sostra" target="_blank">unearthed a Roman road station</a> 5,400 square feet in area with well-appointed facilities including a <a href="http://en.wikipedia.org/wiki/Praetorium" target="_blank">praetorium</a> &#8212; a general or governor&#8217;s council/judgment hall &#8212; and baths with hot and cold water pools. The baths were fed by brick channels built to carry water from the Osam through the underfloor hypocaust system that heated the water, floor and walls. Coins, jewelry and votive offerings found at the bottom of one of the channels underscores that the people who made use of the facilities were wealthy. This wasn&#8217;t a modest public bath for the villagers; it was more like a luxury resort for the well-moneyed traveler. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Ivan-Hristov-shows-pool-heater-at-Sostra-Fortress.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Ivan-Hristov-shows-pool-heater-at-Sostra-Fortress-200x112.jpg" alt="" title="Ivan Hristov indicates the pool heater at the Sostra road station" width="200" height="112" class="alignleft size-medium wp-image-36479" /></a>This year&#8217;s excavation has found a <a href="http://archaeologyinbulgaria.com/2015/05/02/bulgarian-archaeologist-finds-ancient-roman-jacuzzi-heater-at-luxury-road-station-near-sostra-fortress/" target="_blank">furnace used to heat up the water in a shallow pool</a> next to the large swimming pool, much like the small hot tubs attached to the big pools in modern-day resorts. Hristov believes the resort regularly hosted government administrators and may even have been visited by the imperial family when they were in the area.</p>
+<p>The Bulgaria National Museum of History plans to apply for National Monument of Culture status for the Sostra road station which will grease the wheels for additional excavation and partial restoration to enhance its potential as a tourist destination.</p>
+<blockquote><p>The new discovery at the Ancient Roman fortress Sostra is expected to help it receive the status of an archaeological preserve including the fortress, the road station, and a large Early Christian basilica together with several other ancient buildings located at the point where the Lomeshka River flows into the Osam River.</p>
+<p>As the report puts it, tourists will be able to walk around an entire labyrinth of authentic archaeological structures. </p></blockquote>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_1"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a>
+<script type="text/javascript"><!--
+wpa2a.script_load();
+//--></script>
+</div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/ancient" title="View all posts in Ancient" rel="category tag">Ancient</a> |   <a href="http://www.thehistoryblog.com/archives/36478#respond" title="Comment on Roman pool heater found in Bulgarian resort">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36435">
+				<h2><a href="http://www.thehistoryblog.com/archives/36435" rel="bookmark" title="Permanent Link to Huge silver ingot found on alleged Captain Kidd shipwreck">Huge silver ingot found on alleged Captain Kidd shipwreck</a></h2>
+				<p class="prefix">May 8th, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p><center><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/110-pound-silver-bar-found-on-shipwreck-off-the-Island-of-Sainte-Marie.-Image-by-Manjakahery-TsiresenaAFP.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/110-pound-silver-bar-found-on-shipwreck-off-the-Island-of-Sainte-Marie.-Image-by-Manjakahery-TsiresenaAFP-430x278.jpg" alt="" title="110-pound silver bar found on shipwreck off the Island of Sainte Marie. Image by Manjakahery Tsiresena/AFP." width="430" height="278" class="alignnone size-large wp-image-36457" /></a></center><br />
+A <a href="http://www.bbc.com/news/world-africa-32621444" target="_blank">massive silver ingot weighing 110 pounds</a> has been found in the Indian Ocean waters near the island Sainte Marie off the east coast of Madagascar. It was discovered by explorer Barry Clifford on a shipwreck that he alleges is what&#8217;s left of Captain Kidd&#8217;s vessel the <em>Adventure Galley</em>. The silver bar is believed to be the largest ever found on a shipwreck.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Madagascar-President-Hery-Rajaonarimampianina-with-silver-bar.-Image-by-Manjakahery-TsiresenaAFP.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Madagascar-President-Hery-Rajaonarimampianina-with-silver-bar.-Image-by-Manjakahery-TsiresenaAFP-200x149.jpg" alt="" title="Madagascar President Hery Rajaonarimampianina presented with the silver bar at public ceremony. Image by Manjakahery Tsiresena/AFP." width="200" height="149" class="alignright size-medium wp-image-36460" /></a>The ingot has extensive markings on both sides which Clifford&#8217;s team thinks point to its originating in 17th century Bolivia. The History channel (they dropped &#8220;channel&#8221; from the official name but I just can&#8217;t bring myself to call it HISTORY the way they do), which has been filming Clifford&#8217;s exploration of the wreck for an upcoming multi-part series, has an <a href="http://www.history.com/news/has-captain-kidds-treasure-been-found" target="_blank">image of the underside of the ingot</a> with the marks labelled but not explained. I guess they&#8217;re saving the full explanation for the show. The ingot was recovered from the wreck and handed over to Madagascar&#8217;s President Hery Rajaonarimampianina in a public ceremony.</p>
+<p>Clifford <a href="http://articles.latimes.com/2000/apr/06/local/me-16619" target="_blank">found this wreck 15 years ago</a> and has been returning to it regularly ever since. The problem is there is no concrete evidence that it&#8217;s the <em>Adventure Galley</em>. They found an oarlock that&#8217;s the proper size for a galley like the <em>Adventure</em> and copious fragments of Ming Dynasty blue and white porcelain that stylistically dates to the late 17th century and that&#8217;s it. They had hoped to find personal belongings sailors might have left behind that would help identify the wreck, but that came to nought. </p>
+<p>Île Sainte-Marie became known as the Island of the Pirates because a number of pirates used it as a base due to its convenient location next to the lucrative shipping lanes of the East India trade, its many protected bays and inlets and its rich endowment of fruit. Captain Kidd is known to have harbored there in the Spring and Summer of 1698, but the ship could have belonged to any of the many pirates and privateers who hung out on Sainte-Marie around that time.</p>
+<p>That hasn&#8217;t stopped Clifford from making claims that are, to put it generously, hyperbolic. </p>
+<blockquote><p>&#8220;Captain&#8217;s Kidd&#8217;s treasure is the stuff of legends. People have been looking for it for 300 years. To literally have it hit me on the head &#8211; I thought what the heck just happened to me. I really didn&#8217;t expect this,&#8221; Mr Clifford said.</p>
+<p>&#8220;There&#8217;s more down there. I know the whole bottom of the cavity where I found the silver bar is filled with metal. It&#8217;s too murky down there to see what metal, but my metal detector tells me there is metal on all sides.&#8221;</p></blockquote>
+<p>This has generated many a breathless &#8220;Captain Kidd treasure found!&#8221; headlines, but it&#8217;s really a shameless equivocation because even if Clifford truly did find the remains of the <em>Adventure Galley</em> &#8212; an if even bigger than a 150-pound silver bar &#8212; the legendary treasure of Captain Kidd was not on it. The £100,000 treasure he claimed in his famous last letter to have hidden was in a secret location in the Caribbean, and indeed, what kind of pirate would leave any part of his vast treasure on a derelict vessel while he took his best ship across the world to the Caribbean Sea? </p>
+<p>According to Kidd&#8217;s testimony at his trial and a statement from pirate Theophilus Turner, the <em>Adventure Galley</em>, which by then was taking on so much water as to render it barely seaworthy, was burned to the waterline and then sunk. Before it was destroyed, Kidd had anything of value, from the cannon to the very hinges, loaded onto the <em>Quedagh Merchant</em>, a 400-ton merchant vessel he had captured in January of 1698 and renamed the <em>Adventure Prize</em>. Kidd testified that the <em>Adventure Prize</em> was loaded with 10 tons of scrap iron and 14 or 15 spare anchors before leaving Madagascar for the Caribbean. A giant silver ingot is not likely to have been overlooked. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/stacked-cannons.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/stacked-cannons-200x150.jpg" alt="" title="Stacked cannons found on Quedagh Merchant wreck in 2007" width="200" height="150" class="alignleft size-medium wp-image-36453" /></a>The archaeological record supports his testimony, as the wreck of the <em>Quedagh Merchant</em>, <a href="http://www.thehistoryblog.com/archives/44" target="_blank">discovered in 2007</a> in the Caribbean Sea near Catalina Island off the southern coast of the Dominican Republic, was found with 26 cannons, most of them stacked in the hold muzzle to cascabel as cargo rather than armed on deck. Three large anchor crowns were found underneath one of the cannon piles and there were magnetic anomalies detected underneath the anchors that are consistent with the tons of scrap iron Kidd mentioned.</p>
+<p>Even Clifford himself noted in 2000 when he first found the wreck that the <em>Adventure Galley</em> was stripped to the bone before it was destroyed and that therefore he did not expect to find any treasure. Now that a magnificent ingot has &#8220;literally&#8221; hit him on head (in actual fact he literally picked it up from the seabed, as is clear from a <a href="http://www.history.com/news/wp-content/uploads/2015/05/william-kidd-underwater.jpg" target="_blank">screencap of the History channel footage</a>), instead of concluding from this that the wreck is likely not the <em>Adventure Galley</em>, Clifford has chosen to embrace it as Kidd&#8217;s legendary treasure no matter how groundless a claim it is. The ingot is so awesome on its own it really doesn&#8217;t need this kind of sensationlism tarnishing its cool.</p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_2"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts in Modern(ish)" rel="category tag">Modern(ish)</a>, <a href="http://www.thehistoryblog.com/archives/category/treasures" title="View all posts in Treasures" rel="category tag">Treasures</a> |   <a href="http://www.thehistoryblog.com/archives/36435#comments" title="Comment on Huge silver ingot found on alleged Captain Kidd shipwreck">1 Comment &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36402">
+				<h2><a href="http://www.thehistoryblog.com/archives/36402" rel="bookmark" title="Permanent Link to Letter written in murderer William Burke&#8217;s blood on display">Letter written in murderer William Burke&#8217;s blood on display</a></h2>
+				<p class="prefix">May 7th, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/BLUE4561_1.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/BLUE4561_1-100x150.jpg" alt="" title="University of Edinburgh &quot;One Last Fright&quot; events including the staging of a Victorian crime scene. Photograph by Laurence Winram, courtesy of the University of Edinburgh. See https://onelastfright.wordpress.com/" width="100" height="150" class="alignright size-thumbnail wp-image-36421" /></a>The University of Edinburgh is participating in this year&#8217;s <a href="http://www.festivalofmuseums.co.uk/" target="_blank">Festival of Museums</a>, a Scotland-wide series of special exhibitions and activities that will take place the weekend of May 15th – 17th, with a romp through their most deadly collections. <a href="https://onelastfright.wordpress.com/" target="_blank"><em>One Last Fright</em></a> will include events like a talk about gruesome Victorian medical procedures as seen in prints collected by surgeon Sir John William Thomson-Walker, poisonous cosmetics and dyes from the University&#8217;s geology collection and <em>A Scandal in Surgeons&#8217; Hall</em>, an evening of dancing, magic, fortune-telling and a recreation of a Victorian crime scene.</p>
+<p>The most popular event &#8212; tickets are already sold out but you can still <a href="https://onelastfright.wordpress.com/events/friday-15th-may/" target="_blank">add yourself to the waiting list</a> &#8212; is a tour through the University&#8217;s collection of Arthur Conan Doyle books and related materials and best of all, a rare glimpse at a scrapbook relating to the Burke and Hare murders. The scrapbook, thought to have been compiled by a medical student shortly after the grisly events were exposed, has never been display in public before. Neither has its most gruesome page: a letter written in William Burke&#8217;s blood.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Scrapbook-cover.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Scrapbook-cover-108x150.jpg" alt="" title="Cover of Burke and Hare scrapbook. This image was created by the Digital Imaging Unit, Centre for Research Collections, Edinburgh University Library and is © The University of Edinburgh." width="108" height="150" class="alignleft size-thumbnail wp-image-36404" /></a>William Burke and William Hare were Irish immigrants who moved to Edinburgh looking for work as navvies (canal diggers). Burke arrived in Scotland around 1817 and worked the Union Canal. Hare arrived around that time or a little later and also worked the Union Canal. In 1826, he married a widow who owned a cheap but not entirely disreputable (meaning it wasn&#8217;t a brothel) flop house. Burke and Hare didn&#8217;t know each other or meet until 1827 when Burke and his common-law wife Helen McDougal moved into the same neighborhood as the boarding house. They became friends and, when opportunity struck, partners in murder.</p>
+<p>The late 18th and early 19th century saw an explosion of interest in medical studies. The University of Edinburgh was widely reputed to have the best medical school in Britain, if not Europe. So many students clamored to attend its lectures that private anatomy classes sprang up to service the demand. Dr. Robert Knox, a surgeon with a stellar reputation garnered attending to the wounded of the Battle of Waterloo, ran hugely popular anatomy, physiology and surgery courses starting in 1825. At their peak, his classes were attended by 400 students, more than attended all the other private anatomy lectures combined. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Bill_advertising_Dr._Knoxs_lectures_1828.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Bill_advertising_Dr._Knoxs_lectures_1828-89x150.jpg" alt="" title="Bill advertising Dr. Rober Knox&#039;s anatomy lectures, 1828" width="89" height="150" class="alignright size-thumbnail wp-image-36420" /></a>Knox&#8217;s advertisements emphasized that the every lecture would &#8220;comprise a full Demonstration on fresh Anatomical Subjects,&#8221; a very tall order when you consider that his 1828-9 Practical Anatomy and Operative Surgery lecture course ran from October 6th 1828 through the end of July 1829 with twice daily demonstrations, ie, dissections of human cadavers. &#8220;Arrangements have been made,&#8221; the ad assured prospective students, &#8220;to secure as usual an ample supply of Anatomical Subjects.&#8221; </p>
+<p>Just what those arrangements were turned out to be the sticking point. By law, only executed murderers who had been condemned to posthumous dissection were released to anatomy schools. There were nowhere near enough people hanging from the gallows to satisfy the voracious appetite of the University and the private lecturers. For Knox&#8217;s Practical Anatomy course alone, we&#8217;re talking 10 months of twice daily dissections. Even if he reused bodies a few times &#8212; let&#8217;s go so far as to say the same cadaver could last a week (highly unlikely) &#8212; he still would have needed more than 40 bodies just to get through that one course. Then there was his Physiology course to supply, plus the University&#8217;s and the lectures by all the other anatomists.</p>
+<p>Where there&#8217;s demand, someone is going to come up with the supply, and those someones were known as body-snatchers, grave-robbers, ghouls or resurrection men. Digging up recently deceased bodies was highly lucrative work. Resurrectionists would be paid the equivalent of months of wages for a single body. It was the kind of work best performed by locals who knew who was dead or dying and who had relationships with bribable cemetery sextons and with the anatomists. Locals also knew their way around, necessary for surreptitious nighttime excavation and transportation of dead bodies, and could better avoid or pay off law enforcement.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/William-Burke-West-Port-Murders.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/William-Burke-West-Port-Murders-127x150.jpg" alt="" title="Drawing of William Burke at his trial, as published in Thomas Ireland&#039;s &quot;West Port Murders,&quot; 1829" width="127" height="150" class="alignleft size-thumbnail wp-image-36473" /></a>Burke and Hare were not local. They had none of the connections and knowledge resurrection men needed to make their macabre living. In fact, they quite fell into selling bodies by accident. When an elderly lodger at the Hare boarding house named Donald died still owing £4 rent, Hare and Burke stole the body out of the coffin, replaced it with tanner&#8217;s bark, and then schlepped it to the University of Edinburgh where they had heard Professor Alexander Monro III, Chair of Anatomy, was always keen to take a dead body off a guy&#8217;s hands. They asked a student in the courtyard if any of Monro&#8217;s staff was about and the student suggested they take their merchandise to Robert Knox at Number 10 Surgeon&#8217;s Square instead. </p>
+<p>There they found three of Knox&#8217;s assistants &#8212; Jones, Miller and Ferguson &#8212; and arranged to deliver Donald&#8217;s body after nightfall. Dr. Knox examined the corpse and determined its market value was £7.10s (more than $1,000 in today&#8217;s money). None of them asked any questions. They just told Burke and Hare that they would be glad to see them again when they had another body to dispose of. That was December of 1827. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/William-Hare-West-Port-Murders.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/William-Hare-West-Port-Murders-150x134.jpg" alt="" title="Drawing of William Hare at Burke&#039;s trial, as published in Thomas Ireland&#039;s &quot;West Port Murders,&quot; 1829" width="150" height="134" class="alignright size-thumbnail wp-image-36475" /></a>A few months later they had another body to dispose of, only this time it was no accident. Hare got a lodger so drunk he (it might have been a woman; the order of murders is unclear) couldn&#8217;t move, then covered his mouth and nose while Burke laid his weight across his chest until he was smothered to death. They put the corpse in a chest and alerted Knox&#8217;s assistants that they had fresh material. Miller arranged for a porter to meet them for their convenience and the body was brought to Knox&#8217;s lecture rooms. Knox expressed approval at its fresh condition and gave them £10 for the body.</p>
+<p>Thus began a pattern that would continue undisturbed for another year. Lodgers would come in and if they weren&#8217;t already ill, Mr. and/or Mrs. Hare would get them pass-out drunk so Burke and Hare could suffocate them without the victims being able to put up much of a fight. This method ensured there were no obvious marks on the body indicating murder so Knox and his crew could continue to ask no questions. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Scrapbook-2.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Scrapbook-2-200x149.jpg" alt="" title="Songs lamenting the death of James Wilson and the conspiracy of anatomists and resurrectionists. This image was created by the Digital Imaging Unit, Centre for Research Collections, Edinburgh University Library and is © The University of Edinburgh." width="200" height="149" class="alignleft size-medium wp-image-36405" /></a>Burke and Hare killed at least 16 people before they were finally found out. The last victim was Mrs. Mary Docherty. They were extra sloppy this time, stashing her dead body under a bed that a lodger had left her stockings on. The lodger saw the body and went to the police. Instead of disposing of her promptly in the river or somewhere, they quickly brought the body to Knox and made yet another sale even though they knew the cops would be sniffing around. An anonymous tipster told the police to check Knox&#8217;s anatomy lecture rooms and there they found Mrs. Docherty. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Helen-McDougal-West-Port-Murders.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Helen-McDougal-West-Port-Murders-120x150.jpg" alt="" title="Drawing of Helen McDougal at trial, as published in Thomas Ireland&#039;s &quot;West Port Murders,&quot; 1829" width="120" height="150" class="alignright size-thumbnail wp-image-36474" /></a>Burke, McDougal, Hare and Mrs. Hare were arrested. They had circumstantial evidence of two other murders &#8212; a young man names James Wilson (aka Daft Jamie) who was well known in the neighborhood and a beautiful young woman named Mary Paterson who was falsely rumored to be a prostitute &#8212; but charged them with Mrs. Docherty&#8217;s first because she was the only whose body had been found. The evidence was weak even in the one case because there was no proof she&#8217;d been murdered. Concerned Burke and Hare would get off by blaming each other, Lord Advocate Sir William Rae granted the Hares immunity if they testified against Burke. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Margaret-Hare-West-Port-Murders.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Margaret-Hare-West-Port-Murders-131x150.jpg" alt="" title="Drawing of Margaret Hare and her baby at Burke&#039;s trial, , as published in Thomas Ireland&#039;s &quot;West Port Murders,&quot; 1829" width="131" height="150" class="alignleft size-thumbnail wp-image-36476" /></a>It was at the trial in December of 1828 that the notion that Burke and Hare had been resurrectionists came into play. The only reason there was any question of whether they were resurrection men was because Helen McDougal needed plausible deniability. She knew Burke and Hare were dealing in corpses, but if she could claim that she thought they had bought the bodies or robbed graves to get them, then she wouldn&#8217;t be an accessory to murder. It worked; the jury found the charge against her not proven. Burke was found guilty of the murder of Mrs. Docherty and sentenced to death and dissection.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Letter-written-in-Burkes-blood.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Letter-written-in-Burkes-blood-106x150.jpg" alt="" title="Letter written in Burke&#039;s blood by Alexander Monro III. This image was created by the Digital Imaging Unit, Centre for Research Collections, Edinburgh University Library and is © The University of Edinburgh" width="106" height="150" class="alignright size-thumbnail wp-image-36403" /></a>On Wednesday, January 28th, 1829, Burke was hanged. His body was delivered to the Edinburgh Medical College for dissection by Alexander Monro who immortalized the event by writing the following letter with the murderer&#8217;s blood. </p>
+<blockquote><p>This is written with the blood of Wm Burke, who was hanged at Edinburgh on 28th Jan. 1829 for the Murder of Mrs. Campbell or Docherty. The blood was taken from his head on the 1st of Feb. 1829.</p></blockquote>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/burke-skeleton.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/burke-skeleton-112x150.jpg" alt="" title="Burke&#039;s skeleton. Image courtesy of the University of Edinburgh." width="112" height="150" class="alignleft size-thumbnail wp-image-36417" /></a>As was <a href="http://www.thehistoryblog.com/archives/9990" target="_blank">the custom at the time</a>, Burke&#8217;s skin was used to bind books and make accessories, some of which are on display today at the University&#8217;s <a href="http://www.anatomy.mvm.ed.ac.uk/museum/whatson-collections.php" target="_blank">Anatomical Museum</a>. Burke&#8217;s skeleton was preserved for anatomical study, as recommended by the Lord Justice-Clerk, David Boyle at sentencing: &#8220;I trust, that if it is ever customary to preserve skeletons, yours will be preserved, in order that posterity may keep in remembrance of your atrocious crimes.&#8221;</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Burkes-death-mask-pocket-book-Surgeons-Hall-Museum.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Burkes-death-mask-pocket-book-Surgeons-Hall-Museum-106x150.jpg" alt="" title="Burke&#039;s death mask and pocket book made out of his skin on display at Surgeons&#039; Hall Museum" width="106" height="150" class="alignright size-thumbnail wp-image-36416" /></a>Monro&#8217;s letter made its way into the scrapbook along with news stories, songs and other references to the murders, trial and execution. It will be on display along with a petition signed by medical students around the time of the murders demanding more bodies be made available for anatomical studies. Ultimately the Burke and Hare murders solved the cadaver bottleneck once and for all. In 1832 Parliament passed the Anatomy Act allowing any unclaimed bodies to be given to medical schools for dissection before burial. That gave medical schools access to the great masses of dead paupers instead of the much thinner supply of murderers and put a virtually immediate end to the resurrection trade in the United Kingdom.</p>
+<p>(In the US it went on for much, much longer, but that is another story and will be told another time.)</p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_3"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts in Modern(ish)" rel="category tag">Modern(ish)</a>, <a href="http://www.thehistoryblog.com/archives/category/museums" title="View all posts in Museums" rel="category tag">Museums</a> |   <a href="http://www.thehistoryblog.com/archives/36402#comments" title="Comment on Letter written in murderer William Burke&#8217;s blood on display">8 Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36376">
+				<h2><a href="http://www.thehistoryblog.com/archives/36376" rel="bookmark" title="Permanent Link to Original <em>The War of the Worlds</em> drawings for sale">Original <em>The War of the Worlds</em> drawings for sale</a></h2>
+				<p class="prefix">May 6th, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p>H.G. Wells first published his groundbreaking alien invasion story <em>The War of the Worlds</em> in serialized form in <em>Pearson&#8217;s Magazine</em> from April to December of 1897. The next year the <a href="https://archive.org/details/warofworlds00welluoft" target="_blank">first edition of the complete novel</a> was published. It was an immediate success. Translated editions in Dutch, German, Polish, French, Russian and Italian followed in close succession, as well as several other English language editions, and while some of them had a smattering of graphic elements &#8212; the occasional tripod on the cover or title page &#8212; the first fully illustrated edition wasn&#8217;t published until 1906. It was this expensive special edition of only 500 copies that would influence the depiction of Wells&#8217; creations for the next century.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Henrique-Alvim-Corrêa.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Henrique-Alvim-Corrêa-127x150.jpg" alt="" title="Henrique Alvim Corrêa" width="127" height="150" class="alignleft size-thumbnail wp-image-36394" /></a>The illustrator was Henrique Alvim Corrêa, a Brazilian artist who lived a short but intense and productive life. Alvim Corrêa was born in Rio de Janeiro in 1876 to a wealthy family. His father, a prominent lawyer, died when he was seven years old. His mother was remarried to banker José Mendez de Oliveira Castro in 1888, and in 1892, when Alvim Corrêa was 16 years old, the family moved to Lisbon before settling permanently in Paris a year later. In 1894 at the age of 18, he began his formal instruction in art under military painter Édouard Detaille. Military themes had been extremely popular in French art since the Franco-Prussian War (1870-1871) and Henrique followed in his master&#8217;s footsteps, exhibiting well-received military pieces in the Paris Salons of 1896 and 1897.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Self-portrait-ca.-1899.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Self-portrait-ca.-1899-51x150.jpg" alt="" title="Self-portrait, ca. 1899" width="51" height="150" class="alignright size-thumbnail wp-image-36388" /></a>In 1898 Alvim Corrêa suddenly quit his studies, and against the wishes of his family married 17-year-old Blanche Fernande Barbant, daughter of engraver Charles Barbant, who was himself a successful illustrator of books by Jules Verne, among other authors. The newlyweds moved to Brussels and had their first child late that year. Cut off from his family&#8217;s financial support and connections in the art world, Alvim Corrêa had to scrape together whatever commercial work &#8212; advertisements, house painting &#8212; he could find to make do. By 1900 his finances were stable enough that he was able to move his family to the suburb of Boitsfort where he opened a studio.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Female-figure-1902.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Female-figure-1902-67x150.jpg" alt="" title="Female figure, ca. 1902" width="67" height="150" class="alignleft size-thumbnail wp-image-36390" /></a>Still little known as an artist, Alvim Corrêa hustled like crazy to get his work out there. He developed a style of strong contrasts and dynamic movement in drawing and painting, exploring surreal dreamscapes, caricatures, figures in action (military men, working women), landscapes real and fictional, themes of eroticism and violence individually and in combination. In 1903 he read <em>The War of the Worlds</em> and was inspired to draw his vision of Wells&#8217; Martians which fit so handily with the recurring themes in his private work. Entirely unsolicited, Alvim Corrêa took his handful of drawings to London and showed them to Mr. Wells, who didn&#8217;t know him from Adam. The author was so impressed with the artwork that he invited Alvim Corrêa to illustrate the upcoming special edition of <em>The War of Worlds</em> by Belgian publisher L. Vandamme.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Title-page.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Title-page-110x150.jpg" alt="" title="Title page of Book I: &quot;The Coming of the Martians&quot; from &quot;The War of the Worlds,&quot; 1906 edition." width="110" height="150" class="alignright size-thumbnail wp-image-36395" /></a>Alvim Corrêa returned to Boitsfort where he spent two years working on the illustrations. At the same time, he organized a solo exhibition of his own work which opened in 1905 and garnered him significant buzz. He went back to London that year to show Wells the finished group of 32 drawings. Wells loved them and in 1906, L. Vandamme published the large format luxury illustrated French edition of <em>The War of the Worlds</em>. Each of the 500 copies of the special edition was numbered and signed by Henrique Alvim Corrêa. Wells would say of the illustrations: &#8220;Alvim Corrêa did more for my work with his brush than I with my pen.&#8221;</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Untitled-Henri-Lemort.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Untitled-Henri-Lemort-121x150.jpg" alt="" title="Untitled erotic drawing by &quot;Henri Lemort&quot;" width="121" height="150" class="alignleft size-thumbnail wp-image-36389" /></a>Unfortunately his busy 1905 also included several months spent in Switzerland where he had surgery in the vain attempt to stop the tuberculosis that was laying waste to his lungs and intestines. He recovered from the surgery but not from the TB. That powerful drive of his could not overcome tuberculosis. He had to slow down his hectic work schedule considerably, but even a slowed down Alvim Corrêa continued to produce unique art, like <em>Visions Erotiques</em>, a collection of 20 erotic drawings entwining sex and death that he published under the pseudonym Henri Lemort (Henry the dead) in 1908. In 1910 he put together another exhibition of his work, this time alongside other artists&#8217; pieces.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/The-War-of-the-Worlds-LVandamme-edition-announcement-poster-1906.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/The-War-of-the-Worlds-LVandamme-edition-announcement-poster-1906-95x150.jpg" alt="" title="The War of the Worlds, L. Vandamme edition announcement poster, 1906" width="95" height="150" class="alignright size-thumbnail wp-image-36385" /></a>Working until the very end, Alvim Corrêa died in 1910 at the age of 34. He remained virtually unknown, even in his own country, outside of a small circle of rare book collectors and Wells connoisseurs. In the early 1970s Brazilian art historians brought him back into the light as a native son of great talent and innovation. Over the following decades his work, especially the Wells drawings, went on display at museums all over the country. His original drawings for <em>The War of the Worlds</em> remained in his family until 1990 when 31 of the original 32 were sold to a private collector, along with a poster announcing the special edition and a charming note Wells wrote to Alvim Corrêa in November of 1903 in which he told him he was &#8220;very glad indeed you like my Moon Men.&#8221;</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Letter-from-H.G.-Wells-to-Henrique-Alvim-Corrêa.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Letter-from-H.G.-Wells-to-Henrique-Alvim-Corrêa-150x95.jpg" alt="" title="Letter from H.G. Wells to Henrique Alvim Corrêa, November 1903" width="150" height="95" class="alignleft size-thumbnail wp-image-36386" /></a>That entire set is now <a href="http://www.ha.com/c/search-results.zx?N=0+793+794+791+792+1893+1577+2088&#038;chkNotSold=0&#038;Ntk=SI_Titles-Desc&#038;Nty=1&#038;Ntt=%22HENRIQUE+ALVIM+CORR%C3%8AA%22" target="_blank">on sale again at Heritage Auctions</a>. Each piece is being sold in individual lots, with the letter being the least expensive at an estimated sale price of $500-$700, which is basically its autograph value. The estimate for the poster is $3,000-$5,000. The illustrations range from $5,000 to a high range of $25,000 for the title page. The collection all together could take in $500,000.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-in-the-Forest.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-in-the-Forest-139x150.jpg" alt="" title="Martian in the Forest, Book I, Chapter IX: &quot;The Fighting Begins.&quot; Estimate: $7,000 - $9,000." width="139" height="150" class="alignright size-thumbnail wp-image-36399" /></a>Such a shame it&#8217;ll be broken up, though. I hope some proper nerd buys the whole group and donates or loans it permanently to a museum. The 31 original artworks, poster and letter were displayed at the <a href="http://www.empmuseum.org/" target="_blank">Science Fiction Museum and Hall of Fame&#8217;</a>s inaugural <em>The War of the Worlds</em> exhibition in Seattle, Washington, from October 2004 to October 2005. That was the first (and last, as far as I know) time Alvim Corrêa&#8217;s drawings were exhibited in the United States. The museum is the passion project of Microsoft co-founder Paul Allen, who could light his cigars with half a million dollars and has repeatedly proven himself unafraid to pour money into <a href="http://www.thehistoryblog.com/archives/35372" target="_blank">his love of history</a>.</p>
+<p><center><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Emerges.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Emerges-200x254.jpg" alt="" title="Martian Emerges, Book I: &quot;The Coming of the Martians,&quot; Chapter IV: &quot;The Cylinder Opens&quot;. Estimate: $8,000 - $12,000." width="200" height="254" class="alignnone size-medium wp-image-36380" /></a> <a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martians-Blast-House.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martians-Blast-House-200x237.jpg" alt="" title="Martians Blast House, Book I, Chapter VIII: &quot;Friday Night.&quot; Estimate: $7,000 - $9,000." width="200" height="237" class="alignnone size-medium wp-image-36379" /></a><br />
+<a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Fighting-Machine-Hit-by-Shell.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Fighting-Machine-Hit-by-Shell-200x248.jpg" alt="" title="Martian Fighting Machine Hit by Shell, Book I, Chapter XII: &quot;What I Saw of the Destruction of Weybridge and Shepperton.&quot; Estimate: $8,000 - $12,000." width="200" height="248" class="alignnone size-medium wp-image-36382" /></a> <a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Gets-the-Girl.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Gets-the-Girl-200x232.jpg" alt="" title="Martian Gets the Girl, Book I, Chapter XVII: &quot;The Thunder Child&quot;. Estimate: $6,000 - $8,000." width="200" height="232" class="alignnone size-medium wp-image-36378" /></a><br />
+<a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Machine-Over-the-Thames.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Martian-Machine-Over-the-Thames-200x265.jpg" alt="" title="Martian Machine Over the Thames, Book II: &quot;The Earth Under the Martians,&quot; Chapter VII: &quot;The Man on Putney Hill.&quot; Estimate: $8,000 - $12,000." width="200" height="265" class="alignnone size-medium wp-image-36383" /></a> <a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Wrecked-Martian-Handler.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Wrecked-Martian-Handler-200x268.jpg" alt="" title="Wrecked Martian Handler, Book II, Chapter VIII: &quot;Dead London.&quot; Estimate: $8,000 - $12,000." width="200" height="268" class="alignnone size-medium wp-image-36384" /></a><br />
+<a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Abandoned-London.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Abandoned-London-200x264.jpg" alt="" title="Abandoned London, Book II, Chapter IX: &quot;Wreckage.&quot; Estimate: $5,000 - $7,000." width="200" height="264" class="alignnone size-medium wp-image-36393" /></a> <a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/last-drawing.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/last-drawing-200x294.jpg" alt="" title="Drawing 32, the last of the book, not on sale, in which, contrary to H.G. Wells&#039;s assessment of the illustrations, the artist places his brush distinctly beneath the author&#039;s plume in importance." width="200" height="294" class="alignnone size-medium wp-image-36392" /></a></p>
+<p></center></p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_4"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts in Modern(ish)" rel="category tag">Modern(ish)</a> |   <a href="http://www.thehistoryblog.com/archives/36376#comments" title="Comment on Original The War of the Worlds drawings for sale">25 Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36336">
+				<h2><a href="http://www.thehistoryblog.com/archives/36336" rel="bookmark" title="Permanent Link to Neolithic eel fishing spear with bone prong found at Lolland">Neolithic eel fishing spear with bone prong found at Lolland</a></h2>
+				<p class="prefix">May 5th, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Late-Stone-Age-Leister-prongs-bone-point.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Late-Stone-Age-Leister-prongs-bone-point-200x133.jpg" alt="" title="Stone Age eel leister with wooden lateral prongs and bone point in between" width="200" height="133" class="alignright size-medium wp-image-36339" /></a>The archaeological survey in advance of the construction of the Fehmarn Belt Link tunnel on the Danish island of Lolland has discovered another pre-historic treasure in exceptional condition. After the <a href="http://www.thehistoryblog.com/archives/32774" target="_blank">flint dagger with intact bark handle</a>, the <a href="http://www.thehistoryblog.com/archives/33450" target="_blank">5,000-year-old gillnets</a> and the <a href="http://www.thehistoryblog.com/archives/33556" target="_blank">flint axe with the intact wood handle</a>, now archaeologists have unearthed a Stone Age wooden <a href="http://www.aabne-samlinger.dk/media/576739/MLF_PM_0524_lyster_eng.pdf" target="_blank">eel fishing spear with the central bone prong</a> still in place.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Drawing-of-eel-leister.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Drawing-of-eel-leister-150x100.jpg" alt="" title="Drawing of eel leister" width="150" height="100" class="alignleft size-thumbnail wp-image-36338" /></a>Similar spears, known as leisters, are still used to capture eels today, but archaeologists could not confirm whether the design of two lateral prongs that curve outwards with a straight, sharp central prong was used in pre-historic times as well. While individual lateral wooden prongs, bone points and more rarely pairs of prongs have been found before, this is the first time a leister has been found with all three prongs in position. It confirms that Neolithic eel spears had the same configuration as modern ones, which means the craft of eel fishing hasn&#8217;t changed much in thousands of years.</p>
+<blockquote><p>&#8220;Unfortunately, the string winding and the shaft were missing, but the position of leister prongs and bone point in relation to each other can only be interpreted as the result of a leister that has broken off – the pieces were still sitting at an angle in the old seabed. This means that we can now say with a greater level of certainly that Stone Age fishing leisters had both lateral wooden prongs and a centred bone point, although a tiny amount of uncertainty remains until we find a complete preserved leister,&#8221; [<a href="http://www.aabne-samlinger.dk/museumlollandfalster(en)/" target="_blank">Museum Lolland-Falster</a>  archaeologist] Søren Anker Sørensen continues.</p></blockquote>
+<p>The leister has not been radiocarbon dated yet. It was discovered in an area that in the Late Stone Age had two lagoons and a 65-foot-wide belt of stone marking the spot where the coast was in around 3,000 B.C. The spear points could range from the middle to the late Neolithic. An individual lateral prong from a leister was found at another dig site in the ancient lagoon which dates to the late Neolithic.</p>
+<p>Another exciting find from the excavation is the end of a hafted arrow. The shaft isn&#8217;t complete &#8212; the piece is about four inches long and broken in two &#8212; but the most important part of the weapon is: the pointy end. The flint arrowhead is attached, and the adhesive and binding used to fix the point to the shaft is still preserved. There was some discussion about how Stone Age peoples attached the flint parts of their weapons to the wood in the <a href="http://www.thehistoryblog.com/archives/33556/comment-page-1#comment-2727722" target="_blank">comments on the axe article</a> (hi Virginia Burton!). This arrow answers the question neatly. You can see in the photograph how tightly wound the string binding is.</p>
+<p><center><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Arrow-shaft-with-attached-flint-arrowhead.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Arrow-shaft-with-attached-flint-arrowhead-430x286.jpg" alt="" title="Stone Age, arrow shaft with attached flint arrowhead" width="430" height="286" class="alignnone size-large wp-image-36337" /></a></center></p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_5"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/ancient" title="View all posts in Ancient" rel="category tag">Ancient</a> |   <a href="http://www.thehistoryblog.com/archives/36336#comments" title="Comment on Neolithic eel fishing spear with bone prong found at Lolland">6 Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36356">
+				<h2><a href="http://www.thehistoryblog.com/archives/36356" rel="bookmark" title="Permanent Link to Starring Douglas Fairbanks as Coke Ennyday">Starring Douglas Fairbanks as Coke Ennyday</a></h2>
+				<p class="prefix">May 4th, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p>While frolicking through silent movie history yesterday, I came across a veritable treasure of a comedic short. It&#8217;s called <em>The Mystery of the Leaping Fish</em> and it stars Douglas Fairbanks as Coke Ennyday the &#8220;scientific detective,&#8221; a parody of Sherlock Holmes who was a cocaine aficionado albeit nowhere near as rabid a one as Mr. Ennyday. The character&#8217;s name isn&#8217;t the only shameless, even joyful, drug reference. Our hero is not only an avowed drug user, he wears a bandolier of syringes filled with liquid cocaine strapped to his chest and injects himself every few minutes. He also has a large round box labelled &#8220;COCAINE&#8221; in large print that he grabs fistfuls of powder out of that he then buries his face into with Scarface-like gusto. His wall clock eschews hour markers in favor of four words at the cardinal points: eats, sleep, drinks, dope. When the single hand points to drinks, Ennyday&#8217;s manservant makes him the beverage of champions: equal parts Gordon&#8217;s Gin, laudanum and prussic acid (a solution of hydrogen cyanide).</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Halls-Coca-Wine-1897.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Halls-Coca-Wine-1897-200x154.jpg" alt="" title="Hall&#039;s Coca Wine ad in Country Life magazine, 1897" width="200" height="154" class="alignleft size-medium wp-image-36359" /></a>This is no <em>Reefer Madness</em>. There is no stern moral conclusion about the evils of drugs. Fairbanks is his usual gregarious, athletic self, just sillier than usual. This was filmed in 1916 when drugs like cocaine, cannabis and opiates were readily available from pharmaceutical companies. Many states had laws against the sale and use of coca and opium and in December of 1914 Congress passed the Harrison Narcotics Tax Act which in theory made it a federal crime. Authorized companies (pharma) and individuals (doctors, patients) could still dispense and use cocaine and opiates, however.</p>
+<p>Douglas was still a comparative rookie when he made this wacky picture, having moved to Hollywood in 1915 and signed a contract with the newly formed Triangle Pictures where he worked under the D.W. Griffith point of the triangle (the other two points were Thomas Ince and Mack Sennet). His first film was released in November 1915. <em>The Mystery of the Leaping Fish</em> was released just seven months later in June of 1916. By then, with fewer than 10 films under his belt, he already had above the title billing. It was the second time he worked with husband and wife writing team John Emerson and Anita Loos. Emerson directed the picture &#8212; very amusingly, I might add; there are some great comedic beats in there &#8212; and Loos wrote the intertitles with tongue firmly in cheek. Fairbanks made his own contributions to the script, something you see reflected in the beginning and closing sequences where he&#8217;s playing himself pitching the madcap story of Coke Ennyday to a studio writer who naturally tells him this is a ridiculous idea for a picture that will never be made. </p>
+<p>(Loos would later go on to write the novel <em>Gentlemen Prefer Blondes</em>, a huge success in print, on stage and in film, with the most famous movie version starring Marilyn Monroe and Jane Russell. Emerson would go on to be a huge parasite on his wife, sponging off her success, stealing her money, losing it all and stealing it again when she bounced back, all the while cheating on her and manipulating her with faked illnesses and endless drama.)</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Douglas-Fairbanks-with-movie-camera-ca-1916.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Douglas-Fairbanks-with-movie-camera-ca-1916-200x137.jpg" alt="" title="Douglas Fairbanks with movie camera ca. 1916" width="200" height="137" class="alignright size-medium wp-image-36361" /></a>When Fairbanks rose to the loftiest heights of Hollywood fame, he reportedly came to hate this wild foray into drugged-out good times and tried to have it destroyed. With all the silent pictures we&#8217;ve lost to time and nitrate volatility and studios not giving a crap about their history, it&#8217;s remarkable that this bizarre little two-reeler survived even when the greatest star of the era wanted it gone.</p>
+<p>Also of historical note is the relatively subdued racist angle. There&#8217;s a Chinese laundry guy/opium dealer stereotype, but it&#8217;s small potatoes compared to the blatant racism of the debate around the passage of the Harrison Act which was all about cocaine making black men crazy, aggressive, superstrong and driving them to rape white women, while the Chinese used opium to lure innocent white girls into drug addiction, illicit relationships and, inevitably, prostitution.</p>
+<p>The movie really doesn&#8217;t care about any of that noise. It&#8217;s quite remarkable, because studios were consistently cowardly when it came to potentially controversial issues, even before the Fatty Arbuckle scandal and the later implementation of the Production Code. The story was by Tod Browning, best known today for his ground-breaking and still creepy as hell talkie <em>Freaks</em>. He had run away from home to join the circus when he was a teenager, so he was not easily scandalized.</p>
+<p>Anyway, without further ado, here is <em>The Mystery of the Leaping Fish</em>.</p>
+<p><iframe src="//commons.wikimedia.org/wiki/File:The_Mystery_of_the_Leaping_Fish_(1916).webm?embedplayer=yes" width="430" height="319" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_6"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts in Modern(ish)" rel="category tag">Modern(ish)</a>, <a href="http://www.thehistoryblog.com/archives/category/multimedia" title="View all posts in Multimedia" rel="category tag">Multimedia</a> |   <a href="http://www.thehistoryblog.com/archives/36356#comments" title="Comment on Starring Douglas Fairbanks as Coke Ennyday">11 Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36345">
+				<h2><a href="http://www.thehistoryblog.com/archives/36345" rel="bookmark" title="Permanent Link to Watch <em>Too Much Johnson</em> online">Watch <em>Too Much Johnson</em> online</a></h2>
+				<p class="prefix">May 3rd, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p>Last night Turner Classic Movies aired the restored work print of Orson Welles&#8217; <em>Too Much Johnson</em> <a href="http://www.thehistoryblog.com/archives/26495" target="_blank">found in Pordenone</a>, Italy, in 2008. It was the second film Welles ever made (the first was a short eight minutes long; the third was <em>Citizen Kane</em>) and had long been thought lost before the silent film experts of Cinemazero discovered the print that had been languishing forgotten in a shipping company warehouse since the 70s. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Too_Much_Johnson-poster.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Too_Much_Johnson-poster-200x130.jpg" alt="" title="Poster for &quot;Too Much Johnson,&quot; play by William Gillette " width="200" height="130" class="alignright size-medium wp-image-36349" /></a>An adaptation of an <a href="https://archive.org/details/threeactfarcical00gilliala" target="_blank">1894 play by William Gillette</a>, Welles made significant changes to the original script of <em>Too Much Johnson</em> for an experimental staging by his Mercury Theatre company. The original plan was for the three reels of the picture to be introductions to each act, the first reel 20 minutes long, the remaining two 10 minutes each. The film was silent slapstick in the style of Mack Sennett&#8217;s early comedies and it would set the stage for a performance of the play done as a screwball comedy.</p>
+<p>This was Welles&#8217; first full experience of shooting and editing a movie. In 10 days of filming, he shot 25,000 feet of film. He took all 25,000 feet of highly flammable 35mm nitrate to his hotel suite at the St. Regius and edited it himself on a Moviola machine. Producer John Houseman and assistant director John Berry aided him in this slightly insane endeavor, and would later recall that nitrate film covered the floor of the suite reaching knee-high. There was at least one fire. Somehow, the men, the film, the hotel suite and the hotel, for that matter, survived this cockamamie scheme, and Welles managed to narrow down the 10 reels of footage to a rough working print just over an hour in running time.</p>
+<p>He never did finish editing the movie. There may have been an issue with royalties &#8212; Paramount owned the film rights to the original play &#8212; and legend has it the <a href="http://www.puppethouse.org/" target="_blank">Stony Creek Theatre</a>, the theater near New Haven where the play was to have its trial run, did not have the fireproof projection booth and/or a high enough ceiling to show the film. However, Paramount has no record of sending Welles a letter asserting their rights and the Stony Creek Theatre started out as the Lyric Theater, a nickelodeon, in 1903 (the same year <em>The Great Train Robbery</em> altered the movie-going landscape forever) so even though it was purchased by a community theater group in 1920 and a proper stage and fly gallery added, it seems odd that it would have lost all its original film projection capabilities by August 16th, 1938, when the <em>Too Much Johnson</em> preview began.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Ad-for-Stony-Creek-Theater-production-August-11-1938.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Ad-for-Stony-Creek-Theater-production-August-11-1938-200x126.jpg" alt="" title="Ad for Stony Creek Theatre preview, August 11th, 1938" width="200" height="126" class="alignleft size-medium wp-image-36350" /></a>Whatever the reason, the movie part of the Mercury staging of the play never did happen. Without it the play, which Welles had modified extensively assuming there would be introductory films, didn&#8217;t work and the New Haven trial was a flop. Although Welles made noises that the play would move on to Broadway, the debut kept getting postponed and ultimately dropped. The Mercury Theatre company had begun putting on live hour-long radio dramas in July of 1938, and in October of that year they pulled off the greatest radio drama caper of all time with the broadcast of H.G. Wells&#8217; <em>The War of the Worlds</em>. The huge reaction got them a sponsor (Campbell&#8217;s Soup) and two more years of weekly shows, so <em>Too Much Johnson</em> fell by the wayside.</p>
+<p>The footage wound up in storage. Welles himself completely forgot about it until he found a print at his house in Madrid in the 1960s. He refused to show it publicly, saying that it made no sense without the play context, much like the play had made little sense without the companion film. When that print was lost in a fire, scholars thought this important transitional piece that had much to reveal about the development of Welles&#8217; directorial approach was gone forever. That&#8217;s why the discovery of the second print in Pordenone was greeted with such joy by film nerds and Welles&#8217; fans. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Lost-Too-Much-Johnson-film.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Lost-Too-Much-Johnson-film-150x135.jpg" alt="" title="Lost &quot;Too Much Johnson&quot; film before restoration" width="150" height="135" class="alignright size-thumbnail wp-image-36351" /></a><em>Too Much Johnson</em> was restored by the geniuses at the <a href="http://eastmanhouse.org/collections/orson_welles_too_much_johnson.php" target="_blank">George Eastman House</a> with invaluable help from Haghefilm Digitaal in the Netherlands and had its world debut at a silent film festival in Pordenone in October of 2013 before making its US debut later that month at the George Eastman House. That viewing was for members only; the rest of us had to wait to get our eyeballs on it, so I was kicking myself for not realizing ahead of time that the movie would finally air on a widely accessible cable channel. It&#8217;s pretty great, too. I didn&#8217;t find it all that confusing, even though there are no intertitles and there are repetitive takes included.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2013/08/Joseph-Cotten-in-a-chase-through-lower-Manhattan.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2013/08/Joseph-Cotten-in-a-chase-through-lower-Manhattan-200x150.jpg" alt="" title="Joseph Cotten teeters on a chimney while being chased over the rooftops of lower Manhattan" width="200" height="150" class="alignleft size-medium wp-image-26499" /></a>The stand-outs for me are Joseph Cotten, who legs it over the rooftops of New York City with impressive gameness, grace and skill, the cinematography and the angled shots, surprising quick-cuts and close-ups that would come to define the Welles of <em>Citizen Kane</em> and after. Cotten makes Harold Lloyd in <em>Safety Last</em>, one of Welles&#8217; inspirations for the picture, look like an accountant at a desk job. This was done with a shoe-string budget. There were no stunts, no carefully arranged shots that made a guy dangling from a clock a few feet above a platform look like he was dangling from a clock many stories in the air. Cotten and the man he has cuckholded, played with moustache-twirling zest by Edgar Barrier, scramble up and down Battery tenements, scooch around ledges and plank over chimneys with the greatest of ease. </p>
+<p>Cinematographer Paul Dunbar pulled a rabbit out of a hat, making this two-buck-chuck of a film look way more expensive than it had any right to look. There are great shots capturing the geometry of the city (diagonal criss-cross fire escapes, stacks and stacks of boxes, background skyscrapers, hats covering the ground like confetti). Scenes set in &#8220;Cuba&#8221; were shot in a quarry over the Hudson River planted with palm trees Welles picked up at a local plant nursery. It&#8217;s downright eerie how well it all works.  </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2013/08/Orson-Welles-directing-TMJ.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2013/08/Orson-Welles-directing-TMJ-150x101.jpg" alt="" title="Orson Welles on location directing &quot;Too Much Johnson&quot;" width="150" height="101" class="alignright size-thumbnail wp-image-26497" /></a>But you don&#8217;t have to take my word for it just because I neglected to alert you to the impending airing. Thankfully the National Film Preservation Foundation has come to the rescue. When I posted about the restoration two years ago, the NFPF was raising money to digitize the movie and make it available for free on its website. Well, they were successful! You can watch the whole restored 66-minute work print <a href="http://www.filmpreservation.org/preserved-films/screening-room/too-much-johnson-work-print" target="_blank">online here</a>. Being a particularly awesome organization, they have also uploaded <a href="http://www.filmpreservation.org/preserved-films/screening-room/too-much-johnson-reimagined" target="_blank">an edited version</a> which is an &#8220;educated guess&#8221; of how Welles might have pared down the footage for use alongside the play.</p>
+<p>The NFPF version (I&#8217;ve only seen the work print all the way through) is actually better than the version TCM showed, in my opinion, because the score is so much better. They&#8217;ve added a proper silent movie score whereas the TCM version was a very repetitive, sloooooow, minimalist composition that doesn&#8217;t match the slapstick action at all. They&#8217;ve also provided phenomenal notes explaining the full context of the play, comparing the original to drafts of the Mercury version so it&#8217;s much easier to follow the story. So yeah. Two thumbs most enthusiastically up.</p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_7"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts in Modern(ish)" rel="category tag">Modern(ish)</a>, <a href="http://www.thehistoryblog.com/archives/category/multimedia" title="View all posts in Multimedia" rel="category tag">Multimedia</a> |   <a href="http://www.thehistoryblog.com/archives/36345#respond" title="Comment on Watch Too Much Johnson online">No Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36317">
+				<h2><a href="http://www.thehistoryblog.com/archives/36317" rel="bookmark" title="Permanent Link to 13th c. rune stick found in Odense dig">13th c. rune stick found in Odense dig</a></h2>
+				<p class="prefix">May 2nd, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p>From the dig that brought you the <a href="http://www.thehistoryblog.com/archives/29878" target="_blank">barrels full of 14th century human excreta</a> in the city center of Odense, Denmark, the latest find is a small <a href="http://sciencenordic.com/800-year-old-rune-stick-unearthed-during-excavation-danish-city" target="_blank">wooden stick inscribed with runes in the early 13th century</a>. Excavations were already complete (the last day was August 29th, 2014) when archaeologists picked out three small pieces of wood while processing the large number of finds. The three fragments fit together to form a stick 8.5 centimeters (3.3 inches) long, 1.2 cm (.47 inches) wide and a few millimeters thick. Archaeologists saw there were lines on the front and back and recognized them as runes.</p>
+<p><center><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/runestick-2.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/runestick-2-430x163.jpg" alt="" title="Rune stick found in Odense city center, 13th c." width="430" height="163" class="alignnone size-large wp-image-36324" /></a></center></p>
+<p>Lisbeth Imer, a rune expert from The National Museum of Denmark was called in to examine the stick. Preserved for 800 years in the anoxic, water-logged environment, the wood was soft with the texture of cold butter. After conservation &#8212; a long soak in water-soluble wax &#8212; the wood will firm up, but it might also obscure key details of the runes making them harder to interpret accurately. Imer therefore had to work with the soft piece as it was. There&#8217;s also a divot missing in the middle and at some point in its long life the stick was gouged by a root growing against the back.</p>
+<p>She was nonetheless able to extract key words. The runes are in Latin (the runic alphabet can be used to write in any language, just like the alphabet I&#8217;m using right now). There&#8217;s the word <em>salu</em>, which can mean &#8220;good health&#8221; and the back is inscribed <em>t = umi</em> or <em>t = ume</em> <em>famulum suum</em> which together can be read as &#8220;Tomme his servant,&#8221; Tomme being the stick&#8217;s owner and the &#8220;his&#8221; referring to God. It seems, therefore, that this rune stick was an amulet meant to keep its bearer healthy. A broken hole at one end suggests it may have been worn on a string.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Map-Odense-excavation.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Map-Odense-excavation-150x108.jpg" alt="" title="Map of Odense center, excavation circled in red, Fish Square just to the north" width="150" height="108" class="alignleft size-thumbnail wp-image-36333" /></a>It&#8217;s the first runic inscription on a wooden stick found in Denmark in 50 years, but we know these sorts of objects were widespread in medieval Scandinavia despite their relatively poor survival rate because a <a href="http://www.nb.no/baser/runer/eindex.html" target="_blank">stash of 670 rune sticks</a> were discovered during excavations at the Bryggen commercial buildings in Bergen, Norway, after a 1955 fire. This rune stick was also found in a commercial milieu. It was unearthed in a layer containing the remains of trade stalls from the 1200s when the area is known to have had a fish market before it was moved just north to a site still known today as Fisketorvet or Fish Square.</p>
+<p>The rune stick was displayed to the public on April 25th at Møntergården, Odense&#8217;s cultural history museum, as part of Research Day, but it won&#8217;t be exhibited again until conservation is completed.</p>
+<p>Now I know what you&#8217;re thinking. Runes shmunes. What about the poop?! I&#8217;m delighted to report <a href="http://politiken.dk/kultur/ECE2491799/lortefund-bringer-os-taet-paa-vores-forfaedre/" target="_blank">there is an update</a> on the barrels of 700-year-old poop excavated at I. Vilhelm Werners Square in 2013, and it may be the greatest update of all time.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2014/04/Odense-latrine-barrels.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2014/04/Odense-latrine-barrels-200x133.jpg" alt="" title="Two latrine barrels from the 1300s found in Odense " width="200" height="133" class="alignright size-medium wp-image-29880" /></a>First about the barrels themselves: dendrochronological analysis found that the trees used to make the barrels came from Kolobrzeg, Poland, and were felled from 1348 to 1352 and 1346 to 1358. They were used to transport salt from Poland to Denmark and once the contents were removed, the barrels were repurposed. The poop dates to the 1360s, so the turn-over was quite quick. The staves of used barrels loosen up leaving gaps between them, a bug if you&#8217;re trying to carry salt, but a feature if you&#8217;re using them as latrines. The loose staves allowed liquid to slowly seep out into the ground leaving the solid waste to compact in the barrel. Studies have shown that with proper seepage, a single barrel can remain usable for one person for 20 years.</p>
+<p>The compacted poop was removed from the two barrels and is being kept in plastic bags in refrigerators at the Odense City Museums. Researchers take out a teaspoon at a time, run it through a sieve and look at the particulate matter under the microscope. Grains and seeds can be identified by their cellular structure to give us a comprehensive picture of people&#8217;s diets in medieval Odense. So far they have found the remains of a variety of lovely fruits &#8212; apples, figs, elderberries, raspberries, blackberries, wild strawberries &#8212; and mustard seed which would have been used as a flavoring spice. They also found miller&#8217;s bran and corn cockle seeds from a weed that grows alongside edible grains. The seeds are actually poisonous, but because they are difficult to separate from the grain during harvest and processing, a few seeds make their way up the food chain and down the poop chute. Corn cockles are most commonly found in rye fields, so it was likely rye bread or porridge.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Contents-of-1300s-latrine.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Contents-of-1300s-latrine-100x150.jpg" alt="" title="Barrel of 14th century poop" width="100" height="150" class="alignleft size-thumbnail wp-image-36325" /></a>Regarding the moss discovered in the barrels, moss has been found in medieval latrines in England as well. Several species of moss make excellent toilet paper, it seems, and sphagnum moss, aka peat moss, not only provides a comfy wipe, but it has additional hygienic properties as well. There are two kinds of cells in the leaves. The larger of the two can hold water much like a sponge, so it acts as a wet wipe, washing the business area instead of just drying it. In the Middle Ages it was also believed to have antiseptic properties. Interestingly, peat moss is a common additive to modern composting toilets because it encourages the absorption of liquid, encourages aerobic action and helps block odor.</p>
+<p>Speaking of odor, Odense City Museums invited Kouki Fujioka from Tokyo&#8217;s Jikei University to take a whiff of their medieval poop. He is a scent expert, you see, and has developed a system to detect, isolate and categorize scents. He took odor samples from the barrel excrement and will measure the proportions of acids and alcohols in them which will indicate the level of spoilage. He will also work to replicate the various hearty aromas of 700-year-old human excrement which may sound less than enjoyable, but the museum is excited about the possibilities of recreating the smells of the past. Imagine a museum exhibition in Smell-O-Vision. What an intensely immersive connection to history.</p>
+<p>Human excrement isn&#8217;t the only scatological gold unearthed at this site. Archaeologists also found a <a href="http://museum.odense.dk/en/knowledge/knowledge-archaeology/thomas-b-thriges-gade-excavations/thomas-b-thriges-gade-excavations-medieval-animals" target="_blank">perfectly formed dog crap from the 12th century</a>, a very rare survival, which they are analyzing for pollen and seeds to discover what dogs ate in medieval Denmark. </p>
+<p>Oh and they <a href="http://museum.odense.dk/en/knowledge/knowledge-archaeology/thomas-b-thriges-gade-excavations/thomas-b-thriges-gade-excavations-jewelry" target="_blank">found some gold gold too</a> &#8212; a 14th century cross pendant and a delicate 13th century ring with a cabochon garnet &#8212; if you&#8217;re the kind of weirdo who&#8217;s into that sort of thing.</p>
+<p><center><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Gold-cross-pendant-14th-c.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Gold-cross-pendant-14th-c-200x244.jpg" alt="" title="Gold cross pendant, 14th c." width="200" height="244" class="alignnone size-medium wp-image-36327" /></a> <a href="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Gold-garnet-ring-13th-c.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/05/Gold-garnet-ring-13th-c-200x250.jpg" alt="" title="Gold garnet ring ,13th c." width="200" height="250" class="alignnone size-medium wp-image-36328" /></a></center></p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_8"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/medieval" title="View all posts in Medieval" rel="category tag">Medieval</a>, <a href="http://www.thehistoryblog.com/archives/category/museums" title="View all posts in Museums" rel="category tag">Museums</a>, <a href="http://www.thehistoryblog.com/archives/category/treasures" title="View all posts in Treasures" rel="category tag">Treasures</a> |   <a href="http://www.thehistoryblog.com/archives/36317#comments" title="Comment on 13th c. rune stick found in Odense dig">20 Comments &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36294">
+				<h2><a href="http://www.thehistoryblog.com/archives/36294" rel="bookmark" title="Permanent Link to British soldiers, archaeologists find early shots fired at Waterloo">British soldiers, archaeologists find early shots fired at Waterloo</a></h2>
+				<p class="prefix">May 1st, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Musket-balls-found-on-site-of-former-wood-South-of-Hougoumont-smaller-ball-is-French.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Musket-balls-found-on-site-of-former-wood-South-of-Hougoumont-smaller-ball-is-French-200x200.jpg" alt="" title="Musket balls found on site of former wood south of Hougoumont. The larger ball is English, the smaller ball French. Image courtesy Waterloo Uncovered." width="170" height="170" class="alignright size-medium wp-image-36307" /></a>An international team of archaeologists and British war veterans have come together to excavate the Waterloo battlefield. It&#8217;s the first large-scale archaeological survey of the Hougoumont Farm area which proved to be a vital position attacked repeatedly by French forces during the June 18th, 1815, battle. So far the team has focused on the site of a wood south of the farm buildings that took the brunt of early French attacks. It&#8217;s been less than a week and a geophysical survey, a metal detector survey and test trenches have found <a href="http://www.gla.ac.uk/news/headline_404414_en.html" target="_blank">coins, uniform buttons, fragments of firearms and English and French musket balls</a>.</p>
+<blockquote><p>Dr Tony Pollard, Director of the Centre for Battlefield Archaeology at the University of Glasgow, leading the archaeology, said: &#8220;The full team has only been working on site for two days and we have made some very interesting discoveries.  In particular, we have started a comprehensive survey, including metal detecting, of the area of the former wood to the south of the Hougoumont buildings and we have already found spent and unfired musket shots at the southern-most tip of the wood, also fragments of firearms and clothing such as uniform buttons. </p>
+<p>&#8220;We know that shots were exchanged between the French and Allied armies in these woods during the night before the battle, as the French probed the allied position and the first real fighting took place in the same spot. I am confident these shots were fired very early in the battle, probably in the first exchanges.&#8221;</p></blockquote>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Detecting-tree-outside-South-gate.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Detecting-tree-outside-South-gate-150x100.jpg" alt="" title="Metal detecting one of the original trees still standing outside the south gate of Hougoumont Farm. Image courtesy Waterloo Uncovered." width="150" height="100" class="alignleft size-thumbnail wp-image-36306" /></a>The team is hoping this excavation will answer questions about the battle. Much has been written about it, but eye-witness accounts and reports from the battlefield can be biased, muddled and contradictory. Although some topographical features have been altered either deliberately (<a href="http://www.thehistoryblog.com/archives/35787" target="_blank">the Lion Mount</a>) or through natural processes and illegal metal detecting by souvenir hunters has removed a lot of the metal artifacts, the field has been left largely undeveloped in the 200 years since the battle. Battlefield archaeologists are optimistic that there is a great deal left to discover, including the locations of mass graves. The geophysical survey of the area around Hougoumont Farm detected anomalies that could be buried human remains. Any human remains discovered will be studied but not disturbed. The aim is to mark the graves, not to exhume bodies.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Coldstream-Guards-working-on-a-test-trench.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Coldstream-Guards-working-on-a-test-trench-150x100.jpg" alt="" title="Coldstream Guards working on a test trench" width="150" height="100" class="alignright size-thumbnail wp-image-36305" /></a>The <a href="http://www.waterloouncovered.com/" target="_blank">Waterloo Uncovered</a> excavation project was conceived by Major Charles Foinette, serving with 1st Battalion Coldstream Guards, and Mark Evans, an Afghanistan veteran who was also an officer with the Coldstream Guards. The dig is all the more meaningful to them because a company of the Coldstream Guards were stationed at the farm and defended it valiantly against French attacks. Several other former and current Coldstream Guards are part of the excavation team through project partner <a href="http://www.daguk.org/" target="_blank">Operation Nightingale</a>, a program found in 2012 that puts soldiers injured in Afghanistan to work on archaeological excavations as a form of vocational training and physical and social therapy. It&#8217;s been a great success <a href="http://www.thehistoryblog.com/archives/18737" target="_blank">from the first year</a> and Mark Evans is living proof of it since he was first introduced to archaeology through his participation in Operation Nightingale as an Afghanistan veteran suffering from PTSD. To have soldiers working at the site lends valuable insight to battlefield archaeology.</p>
+<blockquote><p>&#8220;Now we&#8217;ve got some of the top archaeologists in the world working on this site, but none of them has ever been in a battle, and it&#8217;s that perspective that the soldiers bring. They&#8217;ve been there, they&#8217;ve seen it. A different time and a different place, but they understand the confusion, they understand how ground is so important to cover and to make into advances,&#8221; Evans said.</p></blockquote>
+<p>The project is currently slated to last a year, but it could develop into a longer-term investigation if the will is there. </p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_9"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts in Modern(ish)" rel="category tag">Modern(ish)</a> |   <a href="http://www.thehistoryblog.com/archives/36294#comments" title="Comment on British soldiers, archaeologists find early shots fired at Waterloo">1 Comment &#187;</a></p>
+			</div>
+
+		
+			<div class="post" id="post-36277">
+				<h2><a href="http://www.thehistoryblog.com/archives/36277" rel="bookmark" title="Permanent Link to 16th c. murals, burials found in Cuzco church">16th c. murals, burials found in Cuzco church</a></h2>
+				<p class="prefix">April 30th, 2015 <!-- by livius drusus --></p>
+
+				<div class="entry">
+					<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Crypt-under-church.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Crypt-under-church-150x83.jpg" alt="" title="Crypt found under church chapel" width="150" height="83" class="alignleft size-thumbnail wp-image-36281" /></a>During the restoration of the 16th century Church of Saint Francis of Assisi in the Peruvian town of Maras, 25 miles northwest of Cuzco, researchers discovered a <a href="http://www.peruthisweek.com/news-hidden-crypt-and-mural-discovered-in-cusco-temple-106032" target="_blank">crypt with skeletal remains and the original murals</a> that had been covered with more fashionable artworks by a famous native son in the 17th century. Experts from the <a href="http://www.drc-cusco.gob.pe/index.php/informacion-institucional/prensa/notas-de-prensa/88-patrimonio-cultural-ultimas-cultural/936-hallan-una-cripta-y-pintura-mural-en-el-templo-san-francisco-de-asis-de-maras" target="_blank">Dirección Desconcentrada de Cultura de Cusco</a> (DPDDC), the governmental organization in charge of administering the cultural patrimony of the Cuzco region in southeastern Peru, found the crypt under the floor of the Virgen de <a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Skeletal-remains-from-early-Christian-burials.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Skeletal-remains-from-early-Christian-burials-150x83.jpg" alt="" title="Skeletal remains from early Christian burials in the crypt" width="150" height="83" class="alignright size-thumbnail wp-image-36278" /></a>las Nieves chapel. Inside are a jumble of human bones that researchers estimate belong to 32 people interred in the early days of the church. The remains are disarticulated and scattered likely as a result of deliberate and repeated desecrations that are known to have occurred in the region.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Templo-Mayor-San-Francisco-de-Asís.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Templo-Mayor-San-Francisco-de-Asís-150x83.jpg" alt="" title="Templo Mayor San Francisco de Asís, Maras, Peru" width="150" height="83" class="alignleft size-thumbnail wp-image-36280" /></a>The Templo Mayor San Francisco de Asís was built in 1556, 22 years after the conquest of Peru, the same year the town was founded by Spanish general Pedro Ortiz de Orué. It was constructed in colonial style with adobe walls on a masonry foundation and a tile roof and packed with religious art. Since the restoration of the church is a top-to-bottom project covering the building and all the art inside of it, paintings on the presbytery wall by Antonio Sinchi Roca were removed for conservation. </p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Murals-discovered-while-dismantling-paintings-by-Antonio-Sinchi-Roka.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Murals-discovered-while-dismantling-paintings-by-Antonio-Sinchi-Roka-150x83.jpg" alt="" title="Murals discovered while dismantling paintings by Antonio Sinchi Roka" width="150" height="83" class="alignright size-thumbnail wp-image-36283" /></a>Antonio Sinchi Roca, born in Maras, was one of the most prominent artists of the Cuzco School, many of whom are unfortunately anonymous today. Bishop Manuel de Mollinedo y Angulo, born to a wealthy Madrid family in 1626 and the powerful bishop of Cuzco from 1673 until his death in 1699, was his patron. His painted a series of portraits of the saints and scenes from the Gospel for the church of Saint Francis in his hometown. There are some great views of them <a href="https://youtu.be/HR7X7SzrAtE?t=1m52s" target="_blank">in this video</a> from right before the refurbishment began.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/First-mural-found-on-walls-of-presbytery.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/First-mural-found-on-walls-of-presbytery-150x83.jpg" alt="" title="Original mural found on walls of presbytery" width="150" height="83" class="alignleft size-thumbnail wp-image-36279" /></a>Underneath Roca&#8217;s paintings researchers found a multi-panel mural with scenes of the Virgin Mary. Covered up barely a century after their creation, the murals are in remarkable condition with beautifully bright colors. Another mural was discovered on the wall of the central nave that has more abstract geometric and zoomorophic designs.</p>
+<p><a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Mural-of-Holy-Family.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Mural-of-Holy-Family-150x83.jpg" alt="" title="Nativity detail from presbytery mural" width="150" height="83" class="alignright size-thumbnail wp-image-36282" /></a>These murals predate the Cuzco School of religious art, the first organized artistic movement in the New World of which Roca was one of the most famous exponents. Keen to dive right into the conversion of the Inca people after the conquest, Spain sent artists to Cuzco, the former capital of the Inca Empire, to found a school that would teach the local Quechuas and mestizos to paint religious art in the European style. The Cuzco School artists painted scenes integral to the Catholic catechism &#8212; the Holy Family, the Virgin and Child, Christ in Glory, saints, angels (often depicted <a href="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Virgin-of-Carmel-Saving-Souls-in-Purgatory-Diego-Quispe-Tito-17th-c.jpg" target=blank><img src="http://www.thehistoryblog.com/wp-content/uploads/2015/04/Virgin-of-Carmel-Saving-Souls-in-Purgatory-Diego-Quispe-Tito-17th-c-111x150.jpg" alt="" title="&quot;Virgin of Carmel Saving Souls in Purgatory&quot; by Diego Quispe Tito of the Cuzco School, 17th c" width="111" height="150" class="alignleft size-thumbnail wp-image-36286" /></a>as warriors), the Final Judgement, the sacraments &#8212; using a palette of bright reds, yellows, earth tones and shining gold. They eschewed perspective, focusing instead of emphasizing the important figures by making them dominant in size and in the splendour of their robes. </p>
+<p>Restoration of the church began in July 2013 and is scheduled to be complete by July of 2016. The art has been removed to a lab for conservation. No word on whether or how they&#8217;ll integrate the original murals with the works that have been covering them for more than 300 years.</p>
+<div class="addtoany_share_save_container addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list a2a_target" id="wpa2a_10"><a class="a2a_dd addtoany_share_save" href="https://www.addtoany.com/share_save"><img src="http://www.thehistoryblog.com/wp-content/sharesavesmall.png" alt="Share"/></a></div></div>				</div>
+
+				<p class="postmetadata">Posted in <a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts in Modern(ish)" rel="category tag">Modern(ish)</a> |   <a href="http://www.thehistoryblog.com/archives/36277#comments" title="Comment on 16th c. murals, burials found in Cuzco church">2 Comments &#187;</a></p>
+			</div>
+
+		
+		<div class="navigation">
+			<div class="alignleft"><a href="http://www.thehistoryblog.com/page/2" >&laquo; Previous Entries</a></div>
+			<div class="alignright"></div>
+		</div>
+
+	
+	</div> <!-- MAIN -->
+
+<div id="SIDE">
+			<h2>Navigation</h2>
+			<ul>
+				<li class="page_item page-item-16"><a href="http://www.thehistoryblog.com/its-a-blog-about-history" title="It&#8217;s a blog. About history.">It&#8217;s a blog. About history.</a></li>
+<li class="page_item page-item-68"><a href="http://www.thehistoryblog.com/thanks-and-praise" title="Thanks and Praise">Thanks and Praise</a></li>
+<li class="page_item page-item-3175"><a href="http://www.thehistoryblog.com/contact-me" title="Contact Me">Contact Me</a></li>
+					<li class="cat-item cat-item-2"><a href="http://www.thehistoryblog.com/archives/category/ancient" title="View all posts filed under Ancient">Ancient</a> (991)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.thehistoryblog.com/archives/category/books" title="View all posts filed under Books">Books</a> (42)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.thehistoryblog.com/archives/category/education" title="View all posts filed under Education">Education</a> (21)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.thehistoryblog.com/archives/category/ex-cathedra" title="View all posts filed under Ex Cathedra">Ex Cathedra</a> (53)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://www.thehistoryblog.com/archives/category/looting" title="View all posts filed under Looting">Looting</a> (178)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.thehistoryblog.com/archives/category/medieval" title="View all posts filed under Medieval">Medieval</a> (371)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.thehistoryblog.com/archives/category/modernish" title="View all posts filed under Modern(ish)">Modern(ish)</a> (1343)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.thehistoryblog.com/archives/category/multimedia" title="View all posts filed under Multimedia">Multimedia</a> (228)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.thehistoryblog.com/archives/category/museums" title="View all posts filed under Museums">Museums</a> (596)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.thehistoryblog.com/archives/category/renaissance" title="View all posts filed under Renaissance">Renaissance</a> (206)
+</li>
+	<li class="cat-item cat-item-18"><a href="http://www.thehistoryblog.com/archives/category/reviews" title="View all posts filed under Reviews">Reviews</a> (3)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://www.thehistoryblog.com/archives/category/rome" title="View all posts filed under Roma, Caput Mundi">Roma, Caput Mundi</a> (130)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.thehistoryblog.com/archives/category/social-policy" title="View all posts filed under Social policy">Social policy</a> (179)
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.thehistoryblog.com/archives/category/treasures" title="View all posts filed under Treasures">Treasures</a> (797)
+</li>
+			</ul>
+
+
+			<h2>Search</h2>
+<div class="SearchBox">
+	<form method="get" action="http://www.thehistoryblog.com/">
+		<div>
+		<input id="searchbox" type="text" value="" name="s" alt="Enter search text"/>
+		<input type="submit" id="searchbutton" value="go" alt="Submit for search results"/>
+		</div>
+	</form>
+</div>
+			<h2>Archives</h2>
+			<ul>
+					<li><a href='http://www.thehistoryblog.com/archives/date/2015/05' title='May 2015'>May 2015</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2015/04' title='April 2015'>April 2015</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2015/03' title='March 2015'>March 2015</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2015/02' title='February 2015'>February 2015</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2015/01' title='January 2015'>January 2015</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/12' title='December 2014'>December 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/11' title='November 2014'>November 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/10' title='October 2014'>October 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/09' title='September 2014'>September 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/08' title='August 2014'>August 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/07' title='July 2014'>July 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/06' title='June 2014'>June 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/05' title='May 2014'>May 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/04' title='April 2014'>April 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/03' title='March 2014'>March 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/02' title='February 2014'>February 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2014/01' title='January 2014'>January 2014</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/12' title='December 2013'>December 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/11' title='November 2013'>November 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/10' title='October 2013'>October 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/09' title='September 2013'>September 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/08' title='August 2013'>August 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/07' title='July 2013'>July 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/06' title='June 2013'>June 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/05' title='May 2013'>May 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/04' title='April 2013'>April 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/03' title='March 2013'>March 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/02' title='February 2013'>February 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2013/01' title='January 2013'>January 2013</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/12' title='December 2012'>December 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/11' title='November 2012'>November 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/10' title='October 2012'>October 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/09' title='September 2012'>September 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/08' title='August 2012'>August 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/07' title='July 2012'>July 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/06' title='June 2012'>June 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/05' title='May 2012'>May 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/04' title='April 2012'>April 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/03' title='March 2012'>March 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/02' title='February 2012'>February 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2012/01' title='January 2012'>January 2012</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/12' title='December 2011'>December 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/11' title='November 2011'>November 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/10' title='October 2011'>October 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/09' title='September 2011'>September 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/08' title='August 2011'>August 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/07' title='July 2011'>July 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/06' title='June 2011'>June 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/05' title='May 2011'>May 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/04' title='April 2011'>April 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/03' title='March 2011'>March 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/02' title='February 2011'>February 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2011/01' title='January 2011'>January 2011</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/12' title='December 2010'>December 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/11' title='November 2010'>November 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/10' title='October 2010'>October 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/09' title='September 2010'>September 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/08' title='August 2010'>August 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/07' title='July 2010'>July 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/06' title='June 2010'>June 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/05' title='May 2010'>May 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/04' title='April 2010'>April 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/03' title='March 2010'>March 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/02' title='February 2010'>February 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2010/01' title='January 2010'>January 2010</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/12' title='December 2009'>December 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/11' title='November 2009'>November 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/10' title='October 2009'>October 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/09' title='September 2009'>September 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/08' title='August 2009'>August 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/07' title='July 2009'>July 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/03' title='March 2009'>March 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/02' title='February 2009'>February 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2009/01' title='January 2009'>January 2009</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/12' title='December 2008'>December 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/11' title='November 2008'>November 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/10' title='October 2008'>October 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/09' title='September 2008'>September 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/08' title='August 2008'>August 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/07' title='July 2008'>July 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/06' title='June 2008'>June 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/05' title='May 2008'>May 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/04' title='April 2008'>April 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/03' title='March 2008'>March 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/02' title='February 2008'>February 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2008/01' title='January 2008'>January 2008</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2007/12' title='December 2007'>December 2007</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2006/07' title='July 2006'>July 2006</a></li>
+	<li><a href='http://www.thehistoryblog.com/archives/date/2006/06' title='June 2006'>June 2006</a></li>
+			</ul>
+
+			<div class="Calendar">
+			<div class="Header"></div>
+				<table id="wp-calendar">
+	<caption>May 2015</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Sunday">S</th>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://www.thehistoryblog.com/archives/date/2015/04" title="View posts for April 2015">&laquo; Apr</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="5" class="pad">&nbsp;</td><td><a href="http://www.thehistoryblog.com/archives/date/2015/05/01" title="British soldiers, archaeologists find early shots fired at Waterloo">1</a></td><td><a href="http://www.thehistoryblog.com/archives/date/2015/05/02" title="13th c. rune stick found in Odense dig">2</a></td>
+	</tr>
+	<tr>
+		<td><a href="http://www.thehistoryblog.com/archives/date/2015/05/03" title="Watch &lt;em&gt;Too Much Johnson&lt;/em&gt; online">3</a></td><td><a href="http://www.thehistoryblog.com/archives/date/2015/05/04" title="Starring Douglas Fairbanks as Coke Ennyday">4</a></td><td><a href="http://www.thehistoryblog.com/archives/date/2015/05/05" title="Neolithic eel fishing spear with bone prong found at Lolland">5</a></td><td><a href="http://www.thehistoryblog.com/archives/date/2015/05/06" title="Original &lt;em&gt;The War of the Worlds&lt;/em&gt; drawings for sale">6</a></td><td><a href="http://www.thehistoryblog.com/archives/date/2015/05/07" title="Letter written in murderer William Burke&#8217;s blood on display">7</a></td><td><a href="http://www.thehistoryblog.com/archives/date/2015/05/08" title="Huge silver ingot found on alleged Captain Kidd shipwreck">8</a></td><td id="today"><a href="http://www.thehistoryblog.com/archives/date/2015/05/09" title="Roman pool heater found in Bulgarian resort">9</a></td>
+	</tr>
+	<tr>
+		<td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+	</tr>
+	<tr>
+		<td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+	</tr>
+	<tr>
+		<td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td class="pad" colspan="6">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table>	
+			<div class="Footer"></div>
+			</div>
+
+
+			<h2>Other</h2>
+			<ul>
+							<li id="linkcat-12" class="linkcat">Blogroll
+	<ul class='xoxo blogroll'>
+<li><a href="http://ahistoryblog.com/" target="_blank">A History Blog</a></li>
+<li><a href="http://ahistorygarden.blogspot.com/" target="_blank">A History Garden</a></li>
+<li><a href="http://scienceblogs.com/aardvarchaeology/" target="_blank">Aardvarchaeology</a></li>
+<li><a href="http://africanhistory.about.com/" target="_blank">African History</a></li>
+<li><a href="http://albertis-window.blogspot.com/">Alberti&#039;s Window</a></li>
+<li><a href="http://alisonincambodia.wordpress.com/">Alison in Cambodia</a></li>
+<li><a href="http://anthropinos.com/" target="_blank">Anthropinos</a></li>
+<li><a href="http://archaeoastronomy.wordpress.com/" target="_blank">Archaeoastronomy</a></li>
+<li><a href="http://archaeoblog.blogspot.com/" target="_blank">Archaeoblog</a></li>
+<li><a href="http://historicalarchaeologyintheancientmediterranean.typepad.com/historical_archaeology_in/" target="_blank">Archaeology in the Ancient Mediterranean</a></li>
+<li><a href="http://archaeoporn.wordpress.com/" target="_blank">Archaeoporn</a></li>
+<li><a href="http://archaeozoo.wordpress.com/" target="_blank">Archaeozoology</a></li>
+<li><a href="http://blog.ctnews.com/hassan/" title="Digging Up History at the Danbury Museum" target="_blank">Archive Archaeology</a></li>
+<li><a href="http://melbourneblogger.blogspot.com/">Art and Architecture, Mainly</a></li>
+<li><a href="http://artintheblood.typepad.com/art_history_today/">Art History Today</a></li>
+<li><a href="http://badarchaeology.blogspot.com/" target="_blank">Bad Archaeology</a></li>
+<li><a href="http://beachcombing.wordpress.com/">Beachcombing&#039;s Bizarre History Blog</a></li>
+<li><a href="http://benedante.blogspot.com/" target="_blank">Bensozia</a></li>
+<li><a href="http://www.bigmapblog.com/" target="_blank">Big Map Blog</a></li>
+<li><a href="http://bloggingtherenaissance.blogspot.com/" target="_blank">Blogging the Renaissance</a></li>
+<li><a href="http://adrianmurdoch.typepad.com/my_weblog/">Bread and Circuses</a></li>
+<li><a href="http://cheekyhistory.blogspot.com/" target="_blank">Cheeky History</a></li>
+<li><a href="http://www.artsjournal.com/culturegrrl/" target="_blank">CultureGrrl</a></li>
+<li><a href="http://www.alexandriaarchive.org/blog/" target="_blank">Digging Digitally</a></li>
+<li><a href="http://www.edwardgoldberg.net/">Edward Goldberg</a></li>
+<li><a href="http://www.egyptology.blogspot.com/" target="_blank">Egyptology News</a></li>
+<li><a href="http://www.elginism.com/" target="_blank">Elginism</a></li>
+<li><a href="http://enlightenedamateur.com/" target="_blank">Enlightened Amateur</a></li>
+<li><a href="http://www.executedtoday.com/" target="_blank">Executed Today</a></li>
+<li><a href="http://www.explaininghistory.com/" target="_blank">Explaining Modern History</a></li>
+<li><a href="http://gaylesbardblog.blogspot.com/" target="_blank">Gayle&#039;s Bard Blog</a></li>
+<li><a href="http://www.generalhistoryblog.com/">General History Blog</a></li>
+<li><a href="http://www.geocurrents.info/">GeocurrentEvents</a></li>
+<li><a href="http://houseoffame.blogspot.com/" target="_blank">Geoffrey Chaucer Hath a Blog</a></li>
+<li><a href="http://geographer-at-large.blogspot.com/" target="_blank">Geographer-at-Large</a></li>
+<li><a href="http://georgiahandsonhistory.com/" target="_blank">Georgia Hands-On History</a></li>
+<li><a href="http://gotmedieval.blogspot.com/" target="_blank">Got Medieval</a></li>
+<li><a href="http://hdghistory.wordpress.com/" target="_blank">HDG History</a></li>
+<li><a href="http://historicalpodcasts.googlepages.com/home" title="An extensive collection of history-themed podcasts" target="_blank">Historical Podcasts</a></li>
+<li><a href="http://historyandthesockmerchant.blogspot.com/" target="_blank">History and the Sock Merchant</a></li>
+<li><a href="http://historyforfree.com/" target="_blank">History for Free</a></li>
+<li><a href="http://thehistoryofeuropepodcast.blogspot.com/" target="_blank">History of Europe Podcast</a></li>
+<li><a href="http://www.historytoday.com/MainArticle.aspx?m=32753&#038;amid=30256053" target="_blank">History Today &#8211; Ancient Rome</a></li>
+<li><a href="http://www.howtobearetronaut.com/">How to be a Retronaut</a></li>
+<li><a href="http://inpursuitofhistory.com/" target="_blank">In Pursuit of History</a></li>
+<li><a href="http://www.secretplacesitaly.net/" target="_blank">Italy&#039;s Secret Places</a></li>
+<li><a href="http://jdownsrosetta.wordpress.com/">J Downs Rosetta Blog</a></li>
+<li><a href="http://www.kilmerhouse.com/" target="_blank">Kilmer House</a></li>
+<li><a href="http://toopoorforgradschool.blogspot.com/">Korean Graduate Studies Prep</a></li>
+<li><a href="http://silverangel2011.wordpress.com/" target="_blank">Learn Everyday!</a></li>
+<li><a href="http://lootingmatters.blogspot.com/" target="_blank">Looting matters</a></li>
+<li><a href="http://queensransom.wordpress.com/" target="_blank">Marie-Antoinette&#039;s Diamonds</a></li>
+<li><a href="http://matters-arising.blogspot.com/">Matters Arising</a></li>
+<li><a href="http://britishlibrary.typepad.co.uk/digitisedmanuscripts/" target="_blank">Medieval and Earlier Manuscripts Blog</a></li>
+<li><a href="http://www.medievalwall.com/">Medieval Wall</a></li>
+<li><a href="http://tonykeen.blogspot.com/" target="_blank">Memorabilia Antonina</a></li>
+<li><a href="http://morbidanatomy.blogspot.com/" target="_blank">Morbid Anatomy</a></li>
+<li><a href="http://www.naomiclifford.com/" title="Georgian lives and loves from the archives" target="_blank">Naomi Clifford</a></li>
+<li><a href="http://nationalmuseumofsurveying.blogspot.com/" target="_blank">National Museum of Surveying</a></li>
+<li><a href="http://neonostalgia.com/weblog/" target="_blank">Neonostalgia</a></li>
+<li><a href="http://www.nickelinthemachine.com/" target="_blank">Nickel in the Machine</a></li>
+<li><a href="http://parenthetically.blogspot.com/" target="_blank">Parenthetically</a></li>
+<li><a href="http://blogs.smithsonianmag.com/history/" target="_blank">Past Imperfect</a></li>
+<li><a href="http://poplargroveproject.blogspot.com/" target="_blank">Poplar Grove Project</a></li>
+<li><a href="http://paul-barford.blogspot.com/">Portable Antiquity Collecting and Heritage Issues</a></li>
+<li><a href="http://romanarch.blogspot.com/" target="_blank">Roman Archaeology</a></li>
+<li><a href="http://flavias.blogspot.com/" target="_blank">Roman Mysteries Blog</a></li>
+<li><a href="http://sanduskyhistory.blogspot.com/" target="_blank">Sandusky Library Blog</a></li>
+<li><a href="http://www.sexyarchaeology.org/" target="_blank">Sexy Archaeology</a></li>
+<li><a href="http://shanghailander.net/" target="_blank">Shanghailander</a></li>
+<li><a href="http://www.shorpy.com/" title="The 100-year-old photography blog" target="_blank">Shorpy</a></li>
+<li><a href="http://streetsofsalem.com/" target="_blank">Streets of Salem</a></li>
+<li><a href="http://surviving-history.blogspot.com/" target="_blank">Surviving History</a></li>
+<li><a href="http://www.talkingpyramids.com/" target="_blank">Talking Pyramids</a></li>
+<li><a href="http://culturalpropertylaw.wordpress.com/" target="_blank">The Archaeology Law Blog</a></li>
+<li><a href="http://theboweryboys.blogspot.com/" target="_blank">The Bowery Boys</a></li>
+<li><a href="http://badhistory.blogspot.com/" target="_blank">The Carnival of Bad History</a></li>
+<li><a href="http://cultivatedclassicist.blogspot.com/" target="_blank">The Cultivated Classicist</a></li>
+<li><a href="http://emyokuproject.com/" target="_blank">The Emyoku Project</a></li>
+<li><a href="http://endiscomingblog.com/" title="Where history and current events meet…for coffee." target="_blank">The End is Coming</a></li>
+<li><a href="http://www.ultimatehistoryproject.com/" target="_blank">The Ultimate History Project</a></li>
+<li><a href="http://danbury.patch.com/columns/the-urban-archeologist" target="_blank">The Urban Archeologist</a></li>
+<li><a href="http://thiswritelife.wordpress.com/" target="_blank">This Write Life</a></li>
+<li><a href="http://threepipeproblem.blogspot.com/">Three Pipe Problem</a></li>
+<li><a href="http://timelines.com/">Timelines</a></li>
+<li><a href="http://www.todayinah.co.uk/">Today In Alternate History</a></li>
+<li><a href="http://www.vaguelyinteresting.co.uk/" target="_blank">Vaguely Interesting</a></li>
+<li><a href="http://www.veritablehokum.com/" title="Comics about historical events" target="_blank">Veritable Hokum</a></li>
+<li><a href="http://www.warhistoryfans.com/" target="_blank">War History Fans</a></li>
+<li><a href="http://wickedyankee.blogspot.com/" target="_blank">Wicked Yankee</a></li>
+<li><a href="http://wwinewsblog.com/" target="_blank">World War I News Blog</a></li>
+<li><a href="http://www.wwar1.blogspot.com" title="Letter from the front in real time 90 years later" target="_blank">WW1: Experiences of an English Soldier</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-13" class="linkcat">Primary Sources
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.fordham.edu/halsall/ancient/asbook.html" target="_blank">Ancient History Sourcebook</a></li>
+<li><a href="http://ancientworldonline.blogspot.com/" target="_blank">Ancient World Online</a></li>
+<li><a href="http://www.bbc.co.uk/history/interactive/virtual_tours/" target="_blank">BBC Virtual Tours</a></li>
+<li><a href="http://darmc.harvard.edu/icb/icb.do?keyword=k40248&#038;pageid=icb.page188868" target="_blank">Digital Atlas of Roman and Medieval Civilizations</a></li>
+<li><a href="http://penelope.uchicago.edu/Thayer/E/Roman/home.html" target="_blank">LacusCurtius</a></li>
+<li><a href="http://womanlondonblitz.blogspot.com/" target="_blank">London Blitz Diary</a></li>
+<li><a href="http://www.fordham.edu/halsall/sbook.html" target="_blank">Medieval History Sourcebook</a></li>
+<li><a href="http://www.lib.unc.edu/dc/mackinney/" target="_blank">Medieval Medical Illustrations</a></li>
+<li><a href="http://www.fordham.edu/halsall/mod/modsbook.html" target="_blank">Modern History Sourcebook</a></li>
+<li><a href="http://www.perseus.tufts.edu/" target="_blank">Perseus Digital Library</a></li>
+<li><a href="http://www.finds.org.uk/index.php" target="_blank">Portable Antiquities Scheme</a></li>
+<li><a href="http://www.primarysourcebook.com/" target="_blank">Primary Sourcebook</a></li>
+<li><a href="http://www.greatwar.nl/frames/default-voorpagina.html" title="Extensive collection of pictures, literature, art and commentary on World War I" target="_blank">The Heritage of the Great War</a></li>
+<li><a href="http://labyrinth.georgetown.edu/" title="Resources for Medieval Studies" target="_blank">The Labyrinth</a></li>
+<li><a href="http://www.medici.org/" title="The Medici Granducal Archive, 1537 and 1743" target="_blank">The Medici Archive Project</a></li>
+<li><a href="http://www.whatliesbeneath.org.uk/" title="British experiences during the Cold War" target="_blank">What Lies Beneath</a></li>
+
+	</ul>
+</li>
+
+				<li>Meta
+				<ul>
+										<li><a href="http://www.thehistoryblog.com/wp-login.php">Log in</a></li>
+					<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
+					<li><a href="http://gettemplate.com/" title="Visual theme designed by GetTemplate.">GetTemplate</a></li>
+									</ul>
+				</li>
+						</ul>
+<a href="http://technorati.com/faves?sub=addfavbtn&amp;add=http://www.thehistoryblog.com " target="_blank"><img src=" http://www.freethought-forum.com/livius/technorati.gif" alt="Add to Technorati Favorites" /></a>
+
+			<h2>Syndication</h2>
+			<ul class="rss">
+				<li><a href="http://www.thehistoryblog.com/feed" >Entries</a></li>
+				<li><a href="http://www.thehistoryblog.com/comments/feed">Comments</a></li>
+			</ul>
+</div>
+
+	<div id="FOOTER">
+		<div style="float:right">
+		<div class="Wrapper">
+			<p>The History Blog &copy; 2015 All Rights Reserved.</p>
+			<p>The History Blog is designed by <a href="http://www.gettemplate.com">GetTemplate</a> and powered by <a href="http://wordpress.org/">WordPress</a> </p>
+		</div>
+		</div>
+	</div>
+
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">function ctSetCookie(c_name, value, def_value) {    document.cookie = c_name + "=" + escape(value.replace(/^def_value$/, value)) + "; path=/";}ctSetCookie("ct_checkjs", "1452227076", "0");</script><script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201519'></script>
+
+<script type="text/javascript"><!--
+wpa2a.targets=[
+{title:'Roman pool heater found in Bulgarian resort',url:'http://www.thehistoryblog.com/archives/36478'},
+{title:'Huge silver ingot found on alleged Captain Kidd shipwreck',url:'http://www.thehistoryblog.com/archives/36435'},
+{title:'Letter written in murderer William Burke&#8217;s blood on display',url:'http://www.thehistoryblog.com/archives/36402'},
+{title:'Original The War of the Worlds drawings for sale',url:'http://www.thehistoryblog.com/archives/36376'},
+{title:'Neolithic eel fishing spear with bone prong found at Lolland',url:'http://www.thehistoryblog.com/archives/36336'},
+{title:'Starring Douglas Fairbanks as Coke Ennyday',url:'http://www.thehistoryblog.com/archives/36356'},
+{title:'Watch Too Much Johnson online',url:'http://www.thehistoryblog.com/archives/36345'},
+{title:'13th c. rune stick found in Odense dig',url:'http://www.thehistoryblog.com/archives/36317'},
+{title:'British soldiers, archaeologists find early shots fired at Waterloo',url:'http://www.thehistoryblog.com/archives/36294'},
+{title:'16th c. murals, burials found in Cuzco church',url:'http://www.thehistoryblog.com/archives/36277'}];
+wpa2a.html_done=true;if(wpa2a.script_ready&&!wpa2a.done)wpa2a.init();wpa2a.script_load();
+//--></script>
+	<div style="display:none">
+	</div>
+
+	<script src="http://stats.wordpress.com/e-201519.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:1.7',blog:'9563068',post:'0'});
+	var load_cmc = function(){linktracker_init(9563068,0,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
 </html>
